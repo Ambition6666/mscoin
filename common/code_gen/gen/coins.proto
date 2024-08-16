@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+message coins{
+  int64 id  = 1;
+  string symbol  = 2;
+  int32 baseCoinScale  = 3;
+  string baseSymbol  = 4;
+  int32 coinScale  = 5;
+  string coinSymbol  = 6;
+  int32 enable  = 7;
+  double fee  = 8;
+  int32 sort  = 9;
+  int32 enableMarketBuy  = 10;
+  int32 enableMarketSell  = 11;
+  double minSellPrice  = 12;
+  int32 flag  = 13;
+  int32 maxTradingOrder  = 14;
+  int32 maxTradingTime  = 15;
+  double minTurnover  = 16;
+  int64 clearTime  = 17;
+  int64 endTime  = 18;
+  int32 exchangeable  = 19;
+  double maxBuyPrice  = 20;
+  double maxVolume  = 21;
+  double minVolume  = 22;
+  double publishAmount  = 23;
+  double publishPrice  = 24;
+  int32 publishType  = 25;
+  int32 robotType  = 26;
+  int64 startTime  = 27;
+  int32 visible  = 28;
+  int32 zone  = 29;
+}

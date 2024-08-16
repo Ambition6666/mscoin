@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+package order;
+
+// protoc-gen-go 版本大于1.4.0, proto文件需要加上go_package,否则无法生成
+option go_package = "./asset";
+
+message OrderReq {
+  string ip = 1;
+  string symbol = 2;
+  int64 page = 4;
+  int64 pageSize = 5;
+  int64 userId = 6;
+  double price = 7;
+  double amount = 8;
+  string direction = 9;
+  string type = 10;
+  int32 useDiscount = 11;
+  string orderId = 12;
+  int32 updateStatus = 13;
+}
+
+message OrderRes {
+  repeated ExchangeOrder list = 1;
+  int64 total = 2;
+}
+
+
+message ExchangeOrder{
+  int64 id  = 1;
+  string orderId  = 2;
+  double amount  = 3;
+  string baseSymbol  = 4;
+  int64 canceledTime  = 5;
+  string coinSymbol  = 6;
+  int64 completedTime  = 7;
+  string direction  = 8;
+  int64 memberId  = 11;
+  double price  = 12;
+  string status  = 13;
+  string symbol  = 14;
+  int64 time  = 15;
+  double tradedAmount  = 16;
+  double turnover  = 17;
+  string type  = 18;
+  string useDiscount  = 21;
+}
+
+message AddOrderRes {
+  string orderId = 1;
+}
+message CancelOrderRes {
+  string orderId = 1;
+}
+
+message ExchangeOrderOrigin{
+  int64 id  = 1;
+  string orderId  = 2;
+  double amount  = 3;
+  string baseSymbol  = 4;
+  int64 canceledTime  = 5;
+  string coinSymbol  = 6;
+  int64 completedTime  = 7;
+  int32 direction  = 8;
+  int64 memberId  = 11;
+  double price  = 12;
+  int32 status  = 13;
+  string symbol  = 14;
+  int64 time  = 15;
+  double tradedAmount  = 16;
+  double turnover  = 17;
+  int32 type  = 18;
+  string useDiscount  = 21;
+}
+
+service Order {
+  rpc FindOrderHistory(OrderReq) returns(OrderRes);
+  rpc FindOrderCurrent(OrderReq) returns(OrderRes);
+  rpc Add(OrderReq) returns(AddOrderRes);
+  rpc FindByOrderId(OrderReq) returns(ExchangeOrderOrigin);
+  rpc CancelOrder(OrderReq) returns(CancelOrderRes);
+}

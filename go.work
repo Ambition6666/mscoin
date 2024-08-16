@@ -1,0 +1,14 @@
+go 1.20
+
+use (
+	./Test
+	./common
+	./exchange
+	./exchange-api
+	./grpc-common
+	./jobcenter
+	./market
+	./market-api
+	./ucenter
+	./ucenter-api
+)

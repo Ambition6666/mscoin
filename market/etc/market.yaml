@@ -1,0 +1,17 @@
+Name: ucenter.rpc
+ListenOn: 127.0.0.1:8082
+Etcd:
+  Hosts:
+    - 192.168.40.134:2379
+  Key: market.rpc
+Mysql:
+  DataSource: root:123456@tcp(127.0.0.1:3306)/mscoin?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+CacheRedis:
+  - Host: 192.168.40.134:6379
+    Type: node
+    Pass: dream
+Mongo:
+  Url: "mongodb://192.168.40.134:27017"
+  Username: "ambition"
+  Password: "123456"
+  Database: "mscoin"

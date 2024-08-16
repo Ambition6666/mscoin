@@ -1,0 +1,1012 @@
+2024-07-22T15:57:42.860+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T15:58:24.932+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T16:00:27.116+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T16:13:23.336+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T16:16:42.926+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721636200L2Hr8Cda94f"}  phone:"13322751159"  code:"4156"  country:"新加坡"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 148 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x1cb8c00, 0x33849b0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000397c20, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0004ae420, 0xc00040cd70, {0x3fa999999999999a, 0xc0004ae450, 0xc00040cd78}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000397c20, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0004ae420, 0xc00040cd70, {0x3fa999999999999a, 0xc0004ae450, 0xc00040cd78}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc0008a9ea8, 0xc0004dd760)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:46 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc00021b290?, {0x22df5d0?, 0xc000548140?}, 0x8f2348?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x91
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x22df5d0, 0xc000548140}, {0x1eb0bc0?, 0xc0004dd760})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	span=1f1827fca945c05b	duration=360.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=2cc13f88b76b68381d721718a3090408
+2024-07-22T16:25:59.302+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T16:28:12.369+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721636888DUX9m4ea71e"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 65 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x22d8c00, 0x39a49b0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000107440, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00028b0e0, 0xc0002903a0, {0x3fa999999999999a, 0xc00028b110, 0xc0002903a8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000107440, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00028b0e0, 0xc0002903a0, {0x3fa999999999999a, 0xc00028b110, 0xc0002903a8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000887ea8, 0xc000473550)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:46 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0004b4780?, {0x28ff5d0?, 0xc0002baa50?}, 0xc000700f00?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x91
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x28ff5d0, 0xc0002baa50}, {0x24d0bc0?, 0xc000473550})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	trace=2e2c8108fd029b19baa81635dffdb7a3	span=5cd35381989bdadc	duration=379.2ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-22T16:35:22.736+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T16:37:04.742+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721637422BBwxn43a983"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 106 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2129f00, 0x37f69b0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000381140, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0002f7f20, 0xc0002f9770, {0x3fa999999999999a, 0xc0002f7f50, 0xc0002f9778}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000381140, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0002f7f20, 0xc0002f9770, {0x3fa999999999999a, 0xc0002f7f50, 0xc0002f9778}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000557ea8, 0xc0003d0a50)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0005142a0?, {0x2750eb0, 0xc00029d810}, 0xc000098ba0?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2750eb0, 0xc00029d810}, {0x23222c0?, 0xc0003d0a50})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=369.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=5593b9ffb0d7ecf4f31f20ebb57c8dab	span=3579d07e76dfe84e
+2024-07-22T16:45:42.637+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T16:47:42.983+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216380603ZMCchba1d2"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 106 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x20f9f00, 0x37c69b0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000423080, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000262180, 0xc000344780, {0x3fa999999999999a, 0xc0002621b0, 0xc000344788}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000423080, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000262180, 0xc000344780, {0x3fa999999999999a, 0xc0002621b0, 0xc000344788}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000625ea8, 0xc0004fc840)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0006d3260?, {0x2720e90, 0xc0003a4be0}, 0xc0006ebb60?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2720e90, 0xc0003a4be0}, {0x22f22c0?, 0xc0004fc840})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=345.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=da8555a4d6781f23dc280b490309745b	span=db2a7403f60fa2ec
+2024-07-22T16:53:29.939+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T16:54:51.481+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216380603ZMCchba1d2"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=411.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=2bb418a5c716cc503a26e0c74a52e0ad	span=d1618277029b31ba
+2024-07-22T16:55:33.792+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721638527QIcNwz9d6ee"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 44 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2849f00, 0x3f169d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc0004cc420, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0004c53b0, 0xc000275980, {0x3fa999999999999a, 0xc0004c53e0, 0xc000275988}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc0004cc420, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0004c53b0, 0xc000275980, {0x3fa999999999999a, 0xc0004c53e0, 0xc000275988}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000587ea8, 0xc0000fdd90)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0002a1710?, {0x2e70e90, 0xc00009bae0}, 0xc000801920?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2e70e90, 0xc00009bae0}, {0x2a422c0?, 0xc0000fdd90})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=88.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=f2a09f9497bd9c89a416f45f8ee9966e	span=b3aa0cc9d4e87af5
+2024-07-22T16:57:23.333+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T17:02:16.579+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721638527QIcNwz9d6ee"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=319.1ms	caller=clientinterceptors/durationinterceptor.go:35	trace=5f507fdd282fa70e8d496bac38ac4faf	span=f30a4fa2ecf56299
+2024-07-22T17:02:48.075+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T17:04:11.156+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721639036iwV2qZd9d91"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	span=185401316ecfe5b8	duration=0.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=a53dc91337190042af8e62e7dd7e93d7
+2024-07-22T17:05:33.911+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T18:41:35.783+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216448930UeTgQ9225b"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 32 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x7a
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x55
+panic({0x3334120, 0x47c09d0})
+	E:/GoLangpkg/src/runtime/panic.go:890 +0x262
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(0x0)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42 +0x13
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc00009de60, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00051cd80, 0xc0000551d0, {0x3fa999999999999a, 0xc00051cdb0, 0xc0000551d8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x6f
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc00009de60, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00051cd80, 0xc0000551d0, {0x3fa999999999999a, 0xc00051cdb0, 0xc0000551d8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0xc6
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000745640, 0xc000388210)
+	d:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x29b
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc00059c9d0, {0x386a070, 0xc00031c3c0}, 0xc000388210)
+	d:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x94
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x386a070, 0xc00031c3c0}, {0x352ede0, 0xc000388210})
+	d:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0xfa
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x1ae
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x414	caller=clientinterceptors/durationinterceptor.go:35	trace=9c1cf264792fec2b7be37390ee0d826c	span=70955af88e29040a	duration=460.8ms
+2024-07-22T18:45:38.746+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T18:57:11.536+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721645828AdRtF5f1326"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 61 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x7a
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x55
+panic({0x2b54120, 0x3fe09d0})
+	E:/GoLangpkg/src/runtime/panic.go:890 +0x262
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(0x0)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42 +0x13
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000680b40, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000250000, 0xc0003df790, {0x3fa999999999999a, 0xc000250030, 0xc0003df798}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x6f
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000680b40, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000250000, 0xc0003df790, {0x3fa999999999999a, 0xc000250030, 0xc0003df798}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0xc6
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc0001f1fc0, 0xc000126840)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x29b
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0006861a0, {0x308a070, 0xc000621680}, 0xc000126840)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x94
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x308a070, 0xc000621680}, {0x2d4ede0, 0xc000126840})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0xfa
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x1ae
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x414	caller=clientinterceptors/durationinterceptor.go:35	trace=e4241bb7627ee52d4190c74975ac3588	span=5b2c749dc52781cc	duration=380.1ms
+2024-07-22T18:57:43.561+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T18:58:33.084+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721645828AdRtF5f1326"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=ee75a7fc75f9242d63c5641af1a60b42	span=285c6acbf3daa0d2
+2024-07-22T18:58:39.997+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721645828AdRtF5f1326"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=ece1581c91a00ba5e430d613549c7fe4	span=2d1e54e747b7e5f7
+2024-07-22T19:02:56.297+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:09:35.037+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721646571c86h3u5719d"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 105 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x7a
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x55
+panic({0x2964120, 0x3df09d0})
+	E:/GoLangpkg/src/runtime/panic.go:890 +0x262
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(0x0)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42 +0x13
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc0001139e0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0001e1470, 0xc000054100, {0x3fa999999999999a, 0xc0001e14d0, 0xc000054108}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x6f
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc0001139e0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0001e1470, 0xc000054100, {0x3fa999999999999a, 0xc0001e14d0, 0xc000054108}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0xc6
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc00034b840, 0xc0000a6dc0)
+	d:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x29b
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc000466e70, {0x2e9a070, 0xc00068ea50}, 0xc0000a6dc0)
+	d:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x94
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2e9a070, 0xc00068ea50}, {0x2b5ede0, 0xc0000a6dc0})
+	d:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0xfa
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x1ae
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x414	trace=b16dd801d127fee271d424145af77053	span=983afe68d485c2dc	duration=437.5ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-22T19:10:13.062+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:16:48.438+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216470078jkwHj28cd0"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 115 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x1c69f00, 0x33369d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000400f00, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0002779b0, 0xc000053d00, {0x3fa999999999999a, 0xc0002779e0, 0xc000053d08}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000400f00, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0002779b0, 0xc000053d00, {0x3fa999999999999a, 0xc0002779e0, 0xc000053d08}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000347ea8, 0xc0003b5550)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0004358f0?, {0x2290f10, 0xc0006c92c0}, 0x0?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2290f10, 0xc0006c92c0}, {0x1e622c0?, 0xc0003b5550})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=296.7ms	caller=clientinterceptors/durationinterceptor.go:35	trace=a23af724f9d8678e27ea8acd757936d2	span=0a6fe44b9ce703d2
+2024-07-22T19:17:36.080+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:17:47.731+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216470078jkwHj28cd0"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	trace=495cc6a3ca2d335daee6048afd6d74eb	span=cb8edb499edc4993	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-22T19:17:53.249+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216470078jkwHj28cd0"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	span=71366827ab56c757	duration=0.6ms	caller=clientinterceptors/durationinterceptor.go:35	trace=e26cbeb35b293e40d5b562b9bc582c70
+2024-07-22T19:18:05.171+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216470078jkwHj28cd0"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	duration=1.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=51e4d32cba70ceb959ebfd6a13d3b83f	span=ee4ecde529bbca3f
+2024-07-22T19:18:10.902+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216470078jkwHj28cd0"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=327.4ms	caller=clientinterceptors/durationinterceptor.go:35	trace=1441e36003a6bd1d24809684c35658ad	span=5f5489011dc60811
+2024-07-22T19:18:16.980+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216470078jkwHj28cd0"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	span=30bd6c1a242acb0d	duration=78.1ms	caller=clientinterceptors/durationinterceptor.go:35	trace=639288ec28b504ae4b89063ea1bebfa0
+2024-07-22T19:18:23.267+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"17216470078jkwHj28cd0"}  phone:"13322751159"  code:"9690"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=71.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=a3329b37d9185c7fe8bf228094a4d8f8	span=70b3a30f048649fa
+2024-07-22T19:19:06.848+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159"  password:"123123"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1721647145tWNVbw8b5b5"}  phone:"13322751159"  code:"2312"  country:"中国"  ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 75 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2a99f00, 0x41669d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc00050c9c0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00047e210, 0xc000396210, {0x3fa999999999999a, 0xc00047e270, 0xc000396218}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc00050c9c0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00047e210, 0xc000396210, {0x3fa999999999999a, 0xc00047e270, 0xc000396218}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc0007c7ea8, 0xc00088e0b0)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xfee927?, {0x30c0fe0, 0xc00088a870}, 0x1484511?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x30c0fe0, 0xc00088a870}, {0x2c922c0?, 0xc00088e0b0})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=79.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=c8f64f3e3e88e7d5d34b4badc8081ec3	span=525d63c0440d2155
+2024-07-22T19:35:22.758+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"17216480169rs6cT83a2e"} phone:"13322751159" code:"2312" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 194 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2a99f00, 0x41669d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc00050c9c0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00047e210, 0xc000396210, {0x3fa999999999999a, 0xc00047e270, 0xc000396218}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc00050c9c0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00047e210, 0xc000396210, {0x3fa999999999999a, 0xc00047e270, 0xc000396218}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc0004ffea8, 0xc00012d1e0)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc000510480?, {0x30c0f70, 0xc00009a690}, 0xc00038b380?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x30c0f70, 0xc00009a690}, {0x2c922c0?, 0xc00012d1e0})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=445.6ms	caller=clientinterceptors/durationinterceptor.go:35	trace=848dd9b26151f09cd907e22e6c062204	span=4b1523ba8feb67cd
+2024-07-22T19:37:15.222+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648219EVywcL8e4dc"} phone:"13322751159" code:"2312" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 203 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2a99f00, 0x41669d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc00050c9c0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00047e210, 0xc000396210, {0x3fa999999999999a, 0xc00047e270, 0xc000396218}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc00050c9c0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00047e210, 0xc000396210, {0x3fa999999999999a, 0xc00047e270, 0xc000396218}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000241ea8, 0xc00012d1e0)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0x13e
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0x0?, {0x30c0f70, 0xc000232a00}, 0xc00010d6d8?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x30c0f70, 0xc000232a00}, {0x2c922c0?, 0xc00012d1e0})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=301.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=7a628e925ee80dc6cd92864cb15cc768	span=5e05651ce78d4f96
+2024-07-22T19:37:52.533+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:38:28.600+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648219EVywcL8e4dc"} phone:"13322751159" code:"2312" country:"中国" ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	span=3634eeb0d102be2f	duration=2008.1ms	caller=clientinterceptors/durationinterceptor.go:35	trace=36b396047dc14f3507b328c85ca95a16
+2024-07-22T19:38:35.657+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:41:59.920+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648496b22S4J1d31f"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 58 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2098d60, 0x37649d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc0004097a0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00055e000, 0xc000515780, {0x3fa999999999999a, 0xc00055e030, 0xc000515788}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc0004097a0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00055e000, 0xc000515780, {0x3fa999999999999a, 0xc00055e030, 0xc000515788}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc00021bea8, 0xc0001271e0)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0xd0
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0002040c0?, {0x26bfad0, 0xc0002360a0}, 0xc000492660?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x26bfad0, 0xc0002360a0}, {0x2290f80?, 0xc0001271e0})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=3.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=96329afd2576e4b1d546130026ce0dc9	span=dc6cc5ec39e1066a
+2024-07-22T19:42:06.306+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648496b22S4J1d31f"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 45 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2098d60, 0x37649d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc0004097a0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00055e000, 0xc000515780, {0x3fa999999999999a, 0xc00055e030, 0xc000515788}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc0004097a0, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc00055e000, 0xc000515780, {0x3fa999999999999a, 0xc00055e030, 0xc000515788}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc0003f7ea8, 0xc0000fcf20)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0xd0
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc000375cb0?, {0x26bfad0, 0xc0005c8dc0}, 0xc0003f7f10?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x26bfad0, 0xc0005c8dc0}, {0x2290f80?, 0xc0000fcf20})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=2.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=55433f189c0630fcfbf9e4c66abb2a90	span=eb78ef7bd768423e
+2024-07-22T19:42:27.511+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:44:20.783+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648496b22S4J1d31f"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	span=744e31e0579dbe58	duration=2007.6ms	caller=clientinterceptors/durationinterceptor.go:35	trace=b0d46eb3672866351268ee4ab062af9e
+2024-07-22T19:44:26.281+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:46:18.393+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648496b22S4J1d31f"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	duration=2007.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=7f0768b07c3b4b301b49a9df14be043f	span=d317302e6b7bea8c
+2024-07-22T19:46:25.174+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:47:13.824+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648830u6gdrrc50ab"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	trace=084af39b76e747e953371076e7b04285	span=ab1994b8ce62aaca	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-22T19:47:19.799+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648830u6gdrrc50ab"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=8ba830a78e23c6a0c51c716862de26d2	span=7ba79c668afe3501
+2024-07-22T19:47:58.428+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721648830u6gdrrc50ab"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	duration=2009.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=38a596e33c2080e4b179a84b96889c6e	span=970a5539fa322065
+2024-07-22T19:48:03.858+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:53:02.640+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721649181fTIvdNc584d"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 146 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2268d60, 0x39349d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc00050dea8, 0xc0003c0840)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:57 +0x5d
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0003ec3c0?, {0x288fa70, 0xc00021d400}, 0xc0001d7260?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x288fa70, 0xc00021d400}, {0x2460f80?, 0xc0003c0840})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	span=f90534ab02062cd6	duration=255.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=ddc517a90aab25cbd31df7123884e9fa
+2024-07-22T19:55:43.376+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T19:57:03.016+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721649420CxY5wZ03172"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = Unknown desc = 注册失败	duration=61.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=f11dba0226cbb66de5463406c7ed10d5	span=f1d2111643b60ba3
+2024-07-22T20:10:41.884+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:11:58.471+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322751159" password:"123123" captcha:{server:"https://0.vaptcha.com/verify" token:"1721650314tHa2J97ef26"} phone:"13322751159" code:"5301" country:"中国" ip:"192.168.40.1" - rpc error: code = Unknown desc = 注册失败	span=fe437c1960c700ba	duration=60.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=fae8b4b0d5827fe993192eda0735a061
+2024-07-22T20:19:13.318+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:29:06.481+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:30:13.046+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"1721651411DEIcEz7bed2"} phone:"13121211231" code:"5961" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 103 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2848d60, 0x3f149d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000107c80, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000473ef0, 0xc00044fd00, {0x3fa999999999999a, 0xc000473f20, 0xc00044fd08}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000107c80, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000473ef0, 0xc00044fd00, {0x3fa999999999999a, 0xc000473f20, 0xc00044fd08}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc0004bfea8, 0xc0005b8000)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:48 +0xd0
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0000568a0?, {0x2e6fb40, 0xc0001dbcb0}, 0xc000779ec0?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2e6fb40, 0xc0001dbcb0}, {0x2a40f80?, 0xc0005b8000})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=8.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=2053c716f29355bfb895e48f308f2130	span=9a28b152c754b564
+2024-07-22T20:31:01.395+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:32:20.528+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"1721651411DEIcEz7bed2"} phone:"13121211231" code:"5961" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 115 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x1ee8d60, 0x35b49d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc00075f200, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000355fb0, 0xc00033aae0, {0x3fa999999999999a, 0xc00040c000, 0xc00033aae8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc00075f200, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000355fb0, 0xc00033aae0, {0x3fa999999999999a, 0xc00040c000, 0xc00033aae8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc0005e3ea8, 0xc0000c7340)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:51 +0xe6
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc00076f080?, {0x250fad0, 0xc0007715e0}, 0xc0005e3f10?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x250fad0, 0xc0007715e0}, {0x20e0f80?, 0xc0000c7340})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	trace=cc4b5e7d3be8bbce465374b911b10562	span=d2cf5a9c8e1ea72c	duration=11.5ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-22T20:34:40.264+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:36:13.072+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"172165176719XZIo22fb9"} phone:"13121211231" code:"5961" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 30 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2018d60, 0x36e49d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc0002ee000, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0002e8ff0, 0xc0002ec530, {0x3fa999999999999a, 0xc0002e9020, 0xc0002ec538}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc0002ee000, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0002e8ff0, 0xc0002ec530, {0x3fa999999999999a, 0xc0002e9020, 0xc0002ec538}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc00066dea8, 0xc0001309a0)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:51 +0xdf
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc000510ba0?, {0x263fb40, 0xc000511320}, 0x0?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x263fb40, 0xc000511320}, {0x2210f80?, 0xc0001309a0})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	trace=06c8a540f793003ab80b1e8303e2b8eb	span=803ef6c7b10dfbc2	duration=11.6ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-22T20:38:41.769+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:40:09.973+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"1721652003Tb86jP91875"} phone:"13121211231" code:"5961" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 115 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2468d60, 0x3b349d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000107140, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000292000, 0xc0002830c0, {0x3fa999999999999a, 0xc000292030, 0xc0002830c8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000107140, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000292000, 0xc0002830c0, {0x3fa999999999999a, 0xc000292030, 0xc0002830c8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.Get(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:93
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000555ea8, 0xc0003a4210)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:52 +0x147
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc000498ab0?, {0x2a8faf0, 0xc0002ca320}, 0x0?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2a8faf0, 0xc0002ca320}, {0x2660f80?, 0xc0003a4210})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	trace=56eee1e05e134cee44f573010f6a0d44	span=d926323c617c40ad	duration=12.5ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-22T20:41:26.544+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:43:22.145+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"1721652199umbzaDf2028"} phone:"13121211231" code:"5961" country:"中国" ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	duration=2001.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=ca0207cbe65563911ddaaccd43ef3932	span=e564097d093808e0
+2024-07-22T20:43:26.896+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:44:21.905+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"1721652199umbzaDf2028"} phone:"13121211231" code:"5961" country:"中国" ip:"192.168.40.1" - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	trace=e250cd8acc398857b9e356ebf1933633	span=8fb830cc3dc54e1d	duration=0.2ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-22T20:47:29.151+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"1721652199umbzaDf2028"} phone:"13121211231" code:"5961" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 48 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2928d60, 0x3ff49d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc0004f2360, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0002f6f60, 0xc00004f5c0, {0x3fa999999999999a, 0xc0002f6f90, 0xc00004f5c8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc0004f2360, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0002f6f60, 0xc00004f5c0, {0x3fa999999999999a, 0xc0002f6f90, 0xc00004f5c8}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.Get(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:93
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc00077dea8, 0xc00047fa20)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:50 +0x126
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0004e8e40?, {0x2f4fad0, 0xc00026ad70}, 0x0?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2f4fad0, 0xc00026ad70}, {0x2b20f80?, 0xc00047fa20})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=4.7ms	caller=clientinterceptors/durationinterceptor.go:35	trace=e0230e19ed55bd4ffbed02730eacdd30	span=2d79ac7bd4df03a3
+2024-07-22T20:51:43.959+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T20:53:28.460+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"1721652806OUP0gN64158"} phone:"13121211231" code:"5961" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 131 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2058d60, 0x37249d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc000445260, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000560000, 0xc000513780, {0x3fa999999999999a, 0xc000560030, 0xc000513788}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc000445260, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc000560000, 0xc000513780, {0x3fa999999999999a, 0xc000560030, 0xc000513788}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.Get(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:93
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000503ea8, 0xc00012dce0)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:50 +0x123
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc000589f30?, {0x267fad0, 0xc00035f180}, 0x0?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x267fad0, 0xc00035f180}, {0x2250f80?, 0xc00012dce0})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=5.9ms	caller=clientinterceptors/durationinterceptor.go:35	trace=ec4286bb66d533d17c1a751ae35fc8b1	span=5d532659e5d28a38
+2024-07-22T21:04:12.699+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-22T21:06:16.988+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13121211231" password:"13121211231" captcha:{server:"https://0.vaptcha.com/verify" token:"1721653553BOpvna9a516"} phone:"13121211231" code:"1396" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 142 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x1fa8d60, 0x36749d0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+github.com/zeromicro/go-zero/core/stores/cache.(*Stat).IncrementTotal(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachestat.go:42
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.doGetCache({0xc0003f4480, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0003ec720, 0xc0003f0c60, {0x3fa999999999999a, 0xc0003ec750, 0xc0003f0c68}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:188 +0x64
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.GetCtx({0xc0003f4480, 0x2260ff9290000, 0xdf8475800, {0x0, 0x0}, 0xc0003ec720, 0xc0003f0c60, {0x3fa999999999999a, 0xc0003ec750, 0xc0003f0c68}, ...}, ...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:98 +0x9e
+github.com/zeromicro/go-zero/core/stores/cache.cacheNode.Get(...)
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/core/stores/cache/cachenode.go:93
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc0004c1ea8, 0xc000554580)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:50 +0x123
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc00017a480?, {0x25cfad0, 0xc000249720}, 0xc000153020?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x25cfad0, 0xc000249720}, {0x21a0f80?, 0xc000554580})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=20.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=cd77e463e8028515bde46f186849d688	span=49e91b390ccb990f
+2024-07-22T21:10:38.521+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:30:03.177+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721719800ksUbU336355"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=633.4ms	caller=clientinterceptors/durationinterceptor.go:35	trace=1e1c0510fabdf3d97151799c4f65dbd9	span=f88ec58573475432
+2024-07-23T15:32:06.392+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13121211231" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721719800ksUbU336355"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	trace=df6f0b147070525bf37a0649df8a7428	span=26e98b7322867c3e	duration=248.4ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-23T15:32:30.899+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13121211231" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721719947i6Qg0I32f39"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=91.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=6adf2fbbc9a3185844ec98889561f2a2	span=a25cb858528ca46a
+2024-07-23T15:33:56.322+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322752259" password:"1223456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721720034oAvDVSecbc3"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	caller=clientinterceptors/durationinterceptor.go:35	trace=cda994299e383e6edd2cfe4faceba0c7	span=864b858e80f5479d	duration=87.9ms
+2024-07-23T15:42:04.964+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:42:04.964+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:42:04.964+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:42:04.964+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:42:56.070+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322752259" password:"1223456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721720034oAvDVSecbc3"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	caller=clientinterceptors/durationinterceptor.go:35	trace=040d98e340800440c95325e47d12fa81	span=7ba627275a356d2e	duration=289.1ms
+2024-07-23T15:43:45.024+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322752259" password:"1223456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721720623eEBQzt62f13"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=149.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=3a955b7d38510b17017770c634fa50c4	span=70a5a6e360e83497
+2024-07-23T15:51:01.589+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322753359" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721721059gP2tnvd1ab1"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	span=7964f92e9758195c	duration=91.9ms	caller=clientinterceptors/durationinterceptor.go:35	trace=868a4719e1a18ba9893714f18fe77638
+2024-07-23T15:53:28.439+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:53:28.439+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:53:28.439+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:53:28.439+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:54:28.093+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721721264eUoAIf41fd1"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=95.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=7882f753b3b0b3056120c76190e8c784	span=ab1fd113b7da72ab
+2024-07-23T15:55:25.160+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:55:25.160+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:55:25.160+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:55:25.160+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T15:57:03.434+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721721264eUoAIf41fd1"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=272.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=152fe4ffb7ae7ce0c001cc1e25835119	span=3543d6cd99c351b7
+2024-07-23T15:57:39.668+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721721458SOv9Q7b5dfd"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=88.4ms	caller=clientinterceptors/durationinterceptor.go:35	trace=f36e51d675081d89bb271aa12ab8e65a	span=b07a06198c320013
+2024-07-23T16:01:05.907+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:01:05.907+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:01:05.907+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:01:05.907+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:04:37.691+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322752259" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721721873hmjm48d5400"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	span=59097d99b0089678	duration=90.4ms	caller=clientinterceptors/durationinterceptor.go:35	trace=bfcaf4f2b7206e7139d13e881db13150
+2024-07-23T16:09:57.957+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:09:57.957+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:09:57.957+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:09:57.957+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:10:29.811+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322752259" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721722228K6B9Jrf4572"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=325.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=3e63699314d06c077bbabc92772ef668	span=9e2334a4f918415c
+2024-07-23T16:11:46.540+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322753359" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721722305rGyVMq125f2"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=88.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=037b248ded94fd983ff4fe16c2aae0bc	span=f16ba34b8998669b
+2024-07-23T16:15:07.326+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:15:07.326+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:15:07.326+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:15:07.326+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:18:14.535+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322753359" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721722685QMSGOc04549"} ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	span=cdfb3632d89f8ee1	duration=2007.7ms	caller=clientinterceptors/durationinterceptor.go:35	trace=341605720ac8eb714b96b29fba6cce53
+2024-07-23T16:20:15.804+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:20:15.804+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:20:15.804+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:20:15.804+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:26:38.715+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:26:38.715+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:26:38.715+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:26:38.715+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:38:55.677+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721723933jJxrjz54ca5"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	trace=0b309ebf14639c37cc6244ecf36722bb	span=fde9fdf371cb85c8	duration=88.9ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-23T16:40:57.809+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:40:57.809+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:40:57.809+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:40:57.809+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:45:50.942+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:45:50.942+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:45:50.942+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:45:50.942+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:54:01.990+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322755559" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721724840Y0AmKj7c3ad"} phone:"13322755559" code:"9690" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 30 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x1f91f20, 0x3668f10})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+common/tools.Encode({0xc0006ae5b0, 0x6}, 0xc00064dd80?)
+	D:/ms-coin-exchange-go/common/tools/encode.go:49 +0xee
+ucenter/internal/domain.(*MemberDomain).Register(0xc00064de68, {0x25bc2e8, 0xc00004e0b8}, {0xc0006ae5a0, 0xb}, {0xc0006ae5e0, 0xb}, {0xc0006ae5b0, 0x6}, {0xc0006ae5f0, ...}, ...)
+	D:/ms-coin-exchange-go/ucenter/internal/domain/member.go:41 +0xf4
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc00064dea8, 0xc000474b00)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:62 +0x16d
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0001f9b30?, {0x25bc2b0, 0xc000229db0}, 0xc0005b1f10?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x25bc2b0, 0xc000229db0}, {0x218b640?, 0xc000474b00})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=343.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=2148e42a8274a6f8280576c5355af463	span=1f18e8fc4a0b78c0
+2024-07-23T16:54:08.145+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322755559" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721724840Y0AmKj7c3ad"} phone:"13322755559" code:"9690" country:"中国" ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	caller=clientinterceptors/durationinterceptor.go:35	trace=00bf27881f77c2a224f3d772b491a818	span=4f3ebcf89923b622	duration=71.3ms
+2024-07-23T16:55:40.460+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:55:40.461+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:55:40.461+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:55:40.461+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:57:33.030+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322755559" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721725051E5eHp83142f"} phone:"13322755559" code:"9690" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 137 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x1b51f20, 0x3228ef0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+common/tools.Encode({0xc000348f80, 0x6}, 0xb?)
+	D:/ms-coin-exchange-go/common/tools/encode.go:49 +0xee
+ucenter/internal/domain.(*MemberDomain).Register(0xc000553e68, {0x217c2e8, 0xc00004e0b8}, {0xc000348f70, 0xb}, {0xc000348fb0, 0xb}, {0xc000348f80, 0x6}, {0xc000348fc0, ...}, ...)
+	D:/ms-coin-exchange-go/ucenter/internal/domain/member.go:40 +0x9c
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000553ea8, 0xc000168e70)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:62 +0x16d
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0002acae0?, {0x217c2b0, 0xc00041ecd0}, 0xc0006ba070?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x217c2b0, 0xc00041ecd0}, {0x1d4b640?, 0xc000168e70})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=298.4ms	caller=clientinterceptors/durationinterceptor.go:35	trace=0e0dcf7db0ec67d4231d2e7a7b4993ab	span=26bdfb289a1436da
+2024-07-23T16:58:52.207+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:58:52.207+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:58:52.207+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T16:58:52.207+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:00:20.196+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:00:20.196+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:00:20.196+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:00:20.196+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:00:56.527+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322755559" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721725255nRS1Q2bc052"} phone:"13322755559" code:"9690" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 101 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2671f20, 0x3d48ef0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+common/tools.Encode({0xc000349730, 0x6}, 0xb?)
+	D:/ms-coin-exchange-go/common/tools/encode.go:49 +0xee
+ucenter/internal/domain.(*MemberDomain).Register(0xc00062fe68, {0x2c9c2e8, 0xc00004e0b8}, {0xc000349710, 0xb}, {0xc000349780, 0xb}, {0xc000349730, 0x6}, {0xc0003497c0, ...}, ...)
+	D:/ms-coin-exchange-go/ucenter/internal/domain/member.go:40 +0x9c
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc00062fea8, 0xc0001282c0)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:62 +0x16d
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc000100400?, {0x2c9c2b0, 0xc0006960f0}, 0xc000777f10?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x2c9c2b0, 0xc0006960f0}, {0x286b640?, 0xc0001282c0})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=292.4ms	caller=clientinterceptors/durationinterceptor.go:35	trace=4abb512c91aeee88344edb381324c51c	span=4f310e7cd40bbad5
+2024-07-23T17:02:37.234+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:02:37.234+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:02:37.234+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:02:37.234+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:05:59.014+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13322755559" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721725555hMrCYe01376"} phone:"13322755559" code:"9690" country:"中国" ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	trace=2c58b6c32d558d3289fbc9cf08177fee	span=e1f33fe86eb153f4	duration=2002.1ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-07-23T17:06:05.295+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:06:05.295+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:06:05.296+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T17:06:05.295+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:21:49.855+08:00	[31;1m error [0;22m	[HTTP] [103;90;1m 503 [0;0;22m - [46;97;1m POST [0;0;22m /uc/register/phone - 192.168.40.1 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+POST /uc/register/phone HTTP/1.0
+Host: 192.168.40.134
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Content-Length: 218
+Content-Type: application/json;charset=UTF-8
+Cookie: TawkConnectionTime=0; twk_uuid_5f6829044704467e89f0afe1=%7B%22uuid%22%3A%221.7xZ6NBc9fA0PYS6D02RVAiDa6Q1SvhVxJDJd4099XP5yIbxz9viEHmfQXh75KBapoZO5Y3AbnqjonrqIsaepyjkRF4AwkCi8lpBo5YPs34XHHnDF4YDn0ZKo%22%2C%22version%22%3A3%2C%22domain%22%3A%22192.168.40.134%22%2C%22ts%22%3A1721730081892%7D
+Origin: http://192.168.40.134:9002
+Referer: http://192.168.40.134:9002/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+X-Auth-Token: 
+X-Forwarded-For: 192.168.40.1
+X-Forwarded-Proto: http
+X-Real-Ip: 192.168.40.1
+X-Requested-With: XMLHttpRequest
+
+{"phone":"13322755559","username":"13322755559","password":"123456","promotion":"","code":"9690","country":"中国","superPartner":"","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721730103TExjLU73f51"}}	duration=3005.1ms	caller=handler/loghandler.go:149	trace=2d21133493dcc2d2fd9e9bd0d4085c64	span=504e65164a289b9d
+2024-07-23T18:21:49.857+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:21:53.866+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:21:57.878+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:01.899+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:05.906+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:09.927+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:13.938+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:17.961+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:21.978+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:25.987+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:29.999+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:34.022+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:38.043+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:42.067+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:46.114+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:50.124+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:54.146+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:22:58.150+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:02.179+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:06.199+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:10.230+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:14.242+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:18.252+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:22.266+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:26.298+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:30.309+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:34.328+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:38.348+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:42.361+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:46.383+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:50.408+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:51.457+08:00	[31;1m error [0;22m	[HTTP] [103;90;1m 503 [0;0;22m - [46;97;1m POST [0;0;22m /uc/register/phone - 192.168.40.1 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+POST /uc/register/phone HTTP/1.0
+Host: 192.168.40.134
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Content-Length: 218
+Content-Type: application/json;charset=UTF-8
+Cookie: TawkConnectionTime=0; twk_uuid_5f6829044704467e89f0afe1=%7B%22uuid%22%3A%221.7xZ6NBc9fA0PYS6D02RVAiDa6Q1SvhVxJDJd4099XP5yIbxz9viEHmfQXh75KBapoZO5Y3AbnqjonrqIsaepyjkRF4AwkCi8lpBo5YPs34XHHnDF4YDn0ZKo%22%2C%22version%22%3A3%2C%22domain%22%3A%22192.168.40.134%22%2C%22ts%22%3A1721730197263%7D
+Origin: http://192.168.40.134:9002
+Referer: http://192.168.40.134:9002/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+X-Auth-Token: 
+X-Forwarded-For: 192.168.40.1
+X-Forwarded-Proto: http
+X-Real-Ip: 192.168.40.1
+X-Requested-With: XMLHttpRequest
+
+{"phone":"13322755559","username":"13322755559","password":"123456","promotion":"","code":"2312","country":"中国","superPartner":"","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721730227B3YcAa632b3"}}	duration=3009.3ms	caller=handler/loghandler.go:149	trace=f1a8f6f578f7f26e0889374c62b8eb6e	span=69fadf411d5d9e4d
+2024-07-23T18:23:54.414+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:23:58.438+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:02.456+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:06.484+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:10.492+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:14.510+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:18.512+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:22.517+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:26.542+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:30.559+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:24:34.576+08:00	[31;1m error [0;22m	context deadline exceeded, key is ucenter.rpc	caller=internal/registry.go:225
+2024-07-23T18:26:05.184+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13324343221" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721730358CNNfP286488"} phone:"13324343221" code:"3211" country:"中国" ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	span=151f890853eaefb0	duration=2012.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=d6947812a2cf9ffc042f45296d88de66
+2024-07-23T18:26:11.297+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:26:11.297+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:26:11.297+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:26:11.297+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:30:29.645+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13324343221" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"17217306277MicCE313c9"} phone:"13324343221" code:"3211" country:"中国" ip:"192.168.40.1" - rpc error: code = Internal desc = panic: runtime error: invalid memory address or nil pointer dereference
+
+goroutine 30 [running]:
+runtime/debug.Stack()
+	E:/GoLangpkg/src/runtime/debug/stack.go:24 +0x65
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:47 +0x46
+panic({0x2a71f20, 0x4148ef0})
+	E:/GoLangpkg/src/runtime/panic.go:884 +0x213
+common/tools.Encode({0xc00004e560, 0x6}, 0xb?)
+	D:/ms-coin-exchange-go/common/tools/encode.go:49 +0xee
+ucenter/internal/domain.(*MemberDomain).Register(0xc000587e68, {0x309c2e8, 0xc00004e0b8}, {0xc00004e550, 0xb}, {0xc00004e590, 0xb}, {0xc00004e560, 0x6}, {0xc00004e5a0, ...}, ...)
+	D:/ms-coin-exchange-go/ucenter/internal/domain/member.go:40 +0x9c
+ucenter/internal/logic/register.(*RegisterLogic).RegisterByPhone(0xc000587ea8, 0xc00016c210)
+	D:/ms-coin-exchange-go/ucenter/internal/logic/register/register_logic.go:62 +0x16d
+ucenter/internal/server/register.(*RegisterServer).RegisterByPhone(0xc0005c2e40?, {0x309c2b0, 0xc0005c76d0}, 0xc0004d7f10?)
+	D:/ms-coin-exchange-go/ucenter/internal/server/register/register_server.go:27 +0x185
+grpc-common/ucenter/types/register._Register_RegisterByPhone_Handler.func1({0x309c2b0, 0xc0005c76d0}, {0x2c6b640?, 0xc00016c210})
+	D:/ms-coin-exchange-go/grpc-common/ucenter/types/register/register_grpc.pb.go:100 +0x78
+github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1.1()
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:53 +0x12f
+created by github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors.UnaryTimeoutInterceptor.func1
+	C:/Users/lingbei/go/pkg/mod/github.com/zeromicro/go-zero@v1.6.6/zrpc/internal/serverinterceptors/timeoutinterceptor.go:43 +0x293	duration=275.6ms	caller=clientinterceptors/durationinterceptor.go:35	trace=ca9ef42387bb50d3649b40c446f27e6a	span=f62078a4d08fdec5
+2024-07-23T18:32:14.366+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:32:14.366+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:32:14.366+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:32:14.366+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:35:42.565+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/register.Register/registerByPhone - username:"13324343221" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1721730937wE0UM47bc17"} phone:"13324343221" code:"3211" country:"中国" ip:"192.168.40.1" - rpc error: code = DeadlineExceeded desc = context deadline exceeded	duration=2007.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=c8836af44b51007d1924ae0dedeaefd8	span=4c89c45e56a34a11
+2024-07-23T18:35:46.939+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:35:46.939+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:35:46.940+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:35:46.940+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:53:36.236+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:53:36.237+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:53:36.238+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-23T18:53:36.241+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-26T16:25:24.009+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-07-30T21:22:57.588+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1722345773HoGDP56a36e"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=499.1ms	caller=clientinterceptors/durationinterceptor.go:35	trace=7dc77f633704da6d85b762f9961bb4b2	span=128e4538ae9cff0b
+2024-07-30T21:23:09.077+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123444456" captcha:{server:"https://0.vaptcha.com/verify" token:"1722345773HoGDP56a36e"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=77.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=ee0255543447d7903afad2e2cbb1e114	span=767dd8e4ed41a1b8
+2024-07-30T21:23:13.656+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"12344456" captcha:{server:"https://0.vaptcha.com/verify" token:"1722345773HoGDP56a36e"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=72.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=57e110e026f745e013918ec5325cda97	span=edd6266d5fac1487
+2024-07-30T21:23:20.738+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1722345773HoGDP56a36e"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=70.7ms	caller=clientinterceptors/durationinterceptor.go:35	trace=6b776e7f067e463bb5907517682f8fb3	span=99237d0909c70e8b
+2024-07-30T21:24:24.211+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1722345861foghLI1e283"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=98.7ms	caller=clientinterceptors/durationinterceptor.go:35	trace=55c6924cc6dc4b237fa16e33cc3c7069	span=9c013b037cbae3df
+2024-07-30T21:24:56.353+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13324343221" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"1722345861foghLI1e283"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	span=dd1d7cd8c8617032	duration=70.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=cb3b39cee8f5631998099946a090adb8
+2024-07-30T21:25:32.826+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13324343221" password:"13324343221" captcha:{server:"https://0.vaptcha.com/verify" token:"17223459304yOHZm12eb5"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	caller=clientinterceptors/durationinterceptor.go:35	trace=31e7ea920063c337ecec93147530f9f7	span=43c16d1484f3e7b8	duration=97.3ms
+2024-07-30T21:25:38.758+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13324343221" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"17223459304yOHZm12eb5"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=71.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=1dc47a8690e76ad132342b968361b526	span=24cac26759d328bd
+2024-08-01T14:23:54.234+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T14:45:29.444+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	trace=1204252d690f85774223f78c47ee5712	span=a7e5bd27b20ae6d9	duration=13.3ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-08-01T14:45:29.444+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=13.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=5da97eea061221f28215d93ae744b1f9	span=c53e7852a4063295
+2024-08-01T14:52:44.185+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	span=c5c3f6b434522383	duration=99.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=6ef7179c9fd45dcd6f1b72ab54587c1d
+2024-08-01T14:52:44.188+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	span=e8c647b75b210ee6	duration=87.9ms	caller=clientinterceptors/durationinterceptor.go:35	trace=18e2c21da35ec5213140d2c8a7db7b41
+2024-08-01T14:56:44.958+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=3.1ms	caller=clientinterceptors/durationinterceptor.go:35	trace=2d4370b053b78873d50b3625d23f66b3	span=4c622c0c1511808d
+2024-08-01T14:56:44.958+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=2.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=3ee2685accce70ed083f3d95fb933e5c	span=0d92317d04d21a8d
+2024-08-01T14:56:50.328+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=2.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=9e6adf884193f38887501570afcd6539	span=678c545f06355695
+2024-08-01T14:56:50.332+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	caller=clientinterceptors/durationinterceptor.go:35	trace=d41f000fa5142d1f9e45230c0636639a	span=26120297fcad4b14	duration=1.6ms
+2024-08-01T14:57:38.091+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=3e8dcd5ab31fe9823d9d38b9cfa5522b	span=c520b0a9c708ed7d
+2024-08-01T14:57:38.091+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=0.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=eeb2544efc01dc0bd75178d6e842748d	span=8b94e3a73be0a606
+2024-08-01T14:57:45.299+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=1.1ms	caller=clientinterceptors/durationinterceptor.go:35	trace=20798e26c3f860e3d387aa7db9f366ed	span=ca7859a69d15cff6
+2024-08-01T14:57:45.312+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=1.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=a07164d257998029fb1abd8a7323dd83	span=62fffb3416df7b94
+2024-08-01T14:58:06.071+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=2.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=e0b6d33fc978e993e623e00b27aeece8	span=a1585723458be8f6
+2024-08-01T14:58:06.074+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	caller=clientinterceptors/durationinterceptor.go:35	trace=4daad1188b82fe607058a862b97f3f1a	span=f4b11dd175ba856b	duration=3.9ms
+2024-08-01T14:58:36.453+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	caller=clientinterceptors/durationinterceptor.go:35	trace=512b0a0dd74ea0c910e90ee7ab295504	span=83c341fa0e321384	duration=4.2ms
+2024-08-01T14:58:36.456+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=1.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=164e758147e2632347b3c7e20ccc7a07	span=2d57a93396d84595
+2024-08-01T15:02:03.263+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=1.6ms	caller=clientinterceptors/durationinterceptor.go:35	trace=5b92f24ec02389b0a4cb3ebc2fbc36e2	span=e8887ae6a09ed9f1
+2024-08-01T15:02:03.263+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=3.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=ab774ae1da85ee62b2d667c74a7e2ade	span=a0296b88a21d3ccf
+2024-08-01T15:04:57.096+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=34.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=0af05400e8ac9195b510d40832bd43c7	span=f61163f1028f20dc
+2024-08-01T15:04:57.100+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = unknown service order.Asset	duration=24.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=661d67dddb27e2ef6af4bea15e1bf9c9	span=ec10701027d79a5b
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:07:21.973+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:08:05.827+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = method FindWalletBySymbol not implemented	caller=clientinterceptors/durationinterceptor.go:35	trace=8ac03c4ed99e013e65860dd1dbaabaad	span=23b692cc79f3b7be	duration=37.1ms
+2024-08-01T15:08:05.828+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = method FindWalletBySymbol not implemented	duration=83.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=7d200f2c5fc81db2360246a0a611a71e	span=ed02e5158af22701
+2024-08-01T15:08:24.254+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = method FindWalletBySymbol not implemented	duration=55.6ms	caller=clientinterceptors/durationinterceptor.go:35	trace=13d3aaf16413495233a7ea9ab81df0f4	span=976be29085263377
+2024-08-01T15:08:24.365+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = method FindWalletBySymbol not implemented	duration=108.8ms	caller=clientinterceptors/durationinterceptor.go:35	trace=86e98767495db6cda512cb2eb913c405	span=8dd7971cc2af0efb
+2024-08-01T15:10:04.128+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unimplemented desc = method FindWalletBySymbol not implemented	span=63bd84bc91cf2d5f	duration=8.3ms	caller=clientinterceptors/durationinterceptor.go:35	trace=eb01c9fabed78043829f31a434384d92
+2024-08-01T15:10:04.137+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unimplemented desc = method FindWalletBySymbol not implemented	trace=6cae6883ba31034a34614419692be0e5	span=97a0b411b5a042c5	duration=24.8ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-08-01T15:14:05.417+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:14:05.418+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:14:05.418+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:14:05.418+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:14:05.418+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:14:05.418+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:14:05.418+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:14:05.418+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:14:05.418+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-01T15:17:35.022+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unknown desc = Error 1146 (42S02): Table 'mscoin.coins' doesn't exist	trace=fdf7a4091580c6385880d42ed408d547	span=5c83f6ee511733b8	duration=18.2ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-08-01T15:17:35.022+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unknown desc = Error 1146 (42S02): Table 'mscoin.coins' doesn't exist	trace=9a1446b7fb11643cd23cdaa4da18ba37	span=53ae145460288c7d	duration=17.2ms	caller=clientinterceptors/durationinterceptor.go:35
+2024-08-03T20:09:07.280+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:09:07.280+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:09:07.281+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:17:54.431+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:17:54.431+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:17:54.431+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:18:57.326+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	duration=3.2ms	caller=clientinterceptors/durationinterceptor.go:35	trace=099f49bad320d863f800b3f304b9ad2c	span=d768bbc8bd2ca3c5
+2024-08-03T20:18:57.331+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	span=a66656fbb1116d71	duration=1.1ms	caller=clientinterceptors/durationinterceptor.go:35	trace=13c9e72c3648556354614427fa7e8034
+2024-08-03T20:19:46.464+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	duration=1.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=b095f369394b5cbf05b1e1a1d2cf5740	span=aec2f18ab52abdf0
+2024-08-03T20:19:46.499+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	span=14dc09b22da85fea	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=9e644a29f44409a14ce02a7413b9147e
+2024-08-03T20:21:03.994+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	span=e15677fefc9c8e6a	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=42730cbb17e0373b735e69d1c1347aca
+2024-08-03T20:21:04.050+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	span=5738fa95fb70660f	duration=0.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=11295850d400fd6d5f04864be3018e18
+2024-08-03T20:21:34.525+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"USDT" userId:11 - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	duration=0.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=2c412f395c066c9ce300d6b59c565a18	span=6eca3975a248c421
+2024-08-03T20:21:34.543+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/order.Asset/findWalletBySymbol - coinName:"BTC" userId:11 - rpc error: code = Unavailable desc = last connection error: connection error: desc = "transport: Error while dialing: dial tcp 127.0.0.1:8081: connectex: No connection could be made because the target machine actively refused it."; last resolver error: produced zero addresses	duration=0.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=e6d299b43db9fa8df5bc65d421cf676a	span=d703c5baac5e7163
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:47:52.048+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.693+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.693+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.693+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.693+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.693+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.693+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.693+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.693+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:52:56.694+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:58:07.320+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:58:07.321+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:58:07.321+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:58:59.178+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:58:59.178+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T20:58:59.178+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T21:01:40.271+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T21:01:40.271+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T21:01:40.271+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T21:04:08.812+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T21:04:08.812+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-03T21:04:08.812+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-04T16:28:37.938+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-04T23:16:05.062+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-05T20:40:15.407+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-08T20:09:48.559+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13324343221" password:"13324343221" captcha:{server:"https://0.vaptcha.com/verify" token:"17231189850ezA3Je207d"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=406.5ms	caller=clientinterceptors/durationinterceptor.go:35	trace=10860c175b01eff17d300dcad8a2e5f8	span=3475e8f732525bd2
+2024-08-08T20:09:55.611+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13324343221" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"17231189850ezA3Je207d"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 人机验证不通过	duration=72.1ms	caller=clientinterceptors/durationinterceptor.go:35	trace=5089e2bbf3a89753e51946f4c23e5f3d	span=008bae6201a2f6bd
+2024-08-08T20:12:15.045+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322752259" password:"13322752259" captcha:{server:"https://0.vaptcha.com/verify" token:"1723119130JzFob0dd40e"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=699.6ms	caller=clientinterceptors/durationinterceptor.go:35	trace=6c0effd6c4b3c0348d0ecc0fb5ce1b19	span=3c92e6e6883942ec
+2024-08-08T20:12:46.851+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322752259" password:"123456" captcha:{server:"https://0.vaptcha.com/verify" token:"17231191611kE6xu412c8"} ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=102.6ms	caller=clientinterceptors/durationinterceptor.go:35	trace=0143e47ff5c29281508575ec724530ac	span=93d8398299fcc2a3
+2024-08-08T20:18:56.256+08:00	[31;1m error [0;22m	fail - etcd:/192.168.40.134:2379/ucenter.rpc/login.Login/login - username:"13322751159"  password:"123456"  captcha:{server:"https://0.vaptcha.com/verify"  token:"1723119532pC7FGR21fd0"}  ip:"192.168.40.1" - rpc error: code = Unknown desc = 账号密码不正确	duration=93.0ms	caller=clientinterceptors/durationinterceptor.go:35	trace=0ea3e62d385e1df2cef7744f861e4306	span=d8340197d53cae28
+2024-08-09T16:15:12.336+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T16:25:27.370+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:12:08.121+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:12:08.123+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:12:08.123+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:17:48.306+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:17:48.320+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:17:48.320+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:19:06.438+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:19:06.438+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:19:06.438+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:20:29.093+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:20:29.093+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:20:29.094+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:21:00.146+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:21:00.146+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:21:00.146+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:23:50.409+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:23:50.410+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34
+2024-08-09T21:23:50.410+08:00	[31;1m error [0;22m	bad resolver state	caller=internal/discovbuilder.go:34

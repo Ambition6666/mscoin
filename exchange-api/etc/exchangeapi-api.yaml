@@ -1,0 +1,15 @@
+Name: exchange-api-api
+Host: 0.0.0.0
+Port: 8890
+ExchangeRpc:
+  Etcd:
+    Hosts:
+      - 192.168.40.134:2379
+    Key: exchange.rpc
+CacheRedis:
+  - Host: 192.168.40.134:6379
+    Type: node
+    Pass: dream
+JWT:
+  AccessSecret: "!@#$mscoin"
+  AccessExpire: 604800

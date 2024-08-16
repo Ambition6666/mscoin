@@ -1,0 +1,17 @@
+Name: ucenterapi-api
+Host: 0.0.0.0
+Port: 8888
+UCenterRpc:
+  Etcd:
+    Hosts:
+      - 192.168.40.134:2379
+    Key: ucenter.rpc
+JWT:
+  AccessSecret: "!@#$mscoin"
+  AccessExpire: 604800
+MarketRpc:
+  Etcd:
+    Hosts:
+      - 192.168.40.134:2379
+    Key: market.rpc
+  NonBlock: true

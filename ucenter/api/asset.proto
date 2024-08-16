@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+package asset;
+
+// protoc-gen-go 版本大于1.4.0, proto文件需要加上go_package,否则无法生成
+option go_package = "./asset";
+
+message AssetReq {
+  string coinName = 1;
+  string ip = 2;
+  int64 userId = 3;
+  string startTime = 4;
+  string endTime = 5;
+  int64 pageNo = 6;
+  int64 pageSize = 7;
+  string type = 8;
+  string symbol = 9;
+}
+
+message AssetResp {}
+
+message Coin{
+int32 id  = 1;
+string name  = 2;
+int32 canAutoWithdraw  = 3;
+int32 canRecharge  = 4;
+int32 canTransfer  = 5;
+int32 canWithdraw  = 6;
+double cnyRate  = 7;
+int32 enableRpc  = 8;
+int32 isPlatformCoin  = 9;
+double maxTxFee  = 10;
+double maxWithdrawAmount  = 11;
+double minTxFee  = 12;
+double minWithdrawAmount  = 13;
+string nameCn  = 14;
+int32 sort  = 15;
+int32 status  = 16;
+string unit  = 17;
+double usdRate  = 18;
+double withdrawThreshold  = 19;
+int32 hasLegal  = 20;
+string coldWalletAddress  = 21;
+double minerFee  = 22;
+int32 withdrawScale  = 23;
+int32 accountType  = 24;
+string depositAddress  = 25;
+string infolink  = 26;
+string information  = 27;
+double minRechargeAmount  = 28;
+}
+
+message MemberWallet{
+int64 id  = 1;
+string address  = 2;
+double balance  = 3;
+double frozenBalance  = 4;
+double releaseBalance  = 5;
+int32 isLock  = 6;
+int64 memberId  = 7;
+int32 version  = 8;
+Coin coin  = 9;
+double toReleased  = 10;
+}
+
+message MemberTransaction{
+  int64 id  = 1;
+  string address  = 2;
+  double amount  = 3;
+  string createTime  = 4;
+  double fee  = 5;
+  int32 flag  = 6;
+  int64 memberId  = 7;
+  string symbol  = 8;
+  string type  = 9;
+  string discountFee  = 10;
+  string realFee  = 11;
+}
+
+message MemberTransactionList {
+  repeated MemberTransaction list = 1;
+  int64 total = 2;
+}
+
+message MemberWalletList {
+  repeated MemberWallet list = 1;
+}
+message AddressList {
+  repeated string list = 1;
+}
+
+service Asset {
+  rpc findWalletBySymbol(AssetReq) returns(MemberWallet);
+  rpc findWallet(AssetReq) returns(MemberWalletList);
+  rpc resetWalletAddress(AssetReq) returns(AssetResp);
+  rpc findTransaction(AssetReq) returns(MemberTransactionList);
+  rpc GetAddress(AssetReq) returns(AddressList);
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package rate;
+
+// protoc-gen-go 版本大于1.4.0, proto文件需要加上go_package,否则无法生成
+option go_package = "./rate";
+
+message RateReq {
+  string unit = 1;
+  string ip = 2;
+}
+
+message RateRes{
+  double rate = 1;
+}
+
+service ExchangeRate {
+  rpc usdRate(RateReq) returns(RateRes);
+}

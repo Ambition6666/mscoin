@@ -1,0 +1,24 @@
+Okx:
+  Apikey: "137aab10-839d-417f-9de8-28e8d63b7324"
+  SecretKey: "FB8078D5B1FBD14FD6A4E4993F859BCB"
+  Pass: "Ztynb680::"
+  Host: "http://www.okx.com"
+  Proxy: "http://localhost:7890"
+Mongo:
+  Url: "mongodb://192.168.40.134:27017"
+  Username: "ambition"
+  Password: "123456"
+  Database: "mscoin"
+Kafka:
+  Addr: 192.168.40.134:9092
+  WriteCap: 100
+  ReadCap: 100
+CacheRedis:
+  Host: 192.168.40.134:6379
+  Type: node
+  Pass: dream
+UCenterRpc:
+  Etcd:
+    Hosts:
+      - 192.168.40.134:2379
+    Key: ucenter.rpc

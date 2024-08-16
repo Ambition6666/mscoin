@@ -1,0 +1,6 @@
+2024-07-27T21:20:28.214+08:00	[31;1m error [0;22m	Error 1146 (42S02): Table 'mscoin.exchange_coins' doesn't exist	caller=domain/exchange_coin.go:25
+2024-07-27T21:22:13.205+08:00	[31;1m error [0;22m	Error 1146 (42S02): Table 'mscoin.exchange_coins' doesn't exist	caller=domain/exchange_coin.go:25
+2024-08-06T19:56:17.384+08:00	 error 	listen tcp 127.0.0.1:8082: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.	caller=zrpc/server.go:88
+2024-08-06T19:58:39.640+08:00	 error 	etcd publisher revoke: etcdserver: requested lease not found	caller=discov/publisher.go:178
+2024-08-06T19:58:39.660+08:00	 error 	context deadline exceeded	caller=domain/exchange_coin.go:25
+2024-08-06T20:11:45.180+08:00	 error 	etcd publisher revoke: etcdserver: requested lease not found	caller=discov/publisher.go:178

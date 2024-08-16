@@ -1,0 +1,17 @@
+Name: market-api-api
+Host: 0.0.0.0
+Port: 8889
+MarketRpc:
+  Etcd:
+    Hosts:
+      - 192.168.40.134:2379
+    Key: market.rpc
+CacheRedis:
+  - Host: 192.168.40.134:6379
+    Type: node
+    Pass: dream
+Kafka:
+  Addr: 192.168.40.134:9092
+  WriteCap: 100
+  ReadCap: 100
+  Group: "kline1m-thumb-consumer"

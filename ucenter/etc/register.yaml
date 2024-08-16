@@ -1,0 +1,34 @@
+Name: ucenter.rpc
+ListenOn: 127.0.0.1:8081
+Etcd:
+  Hosts:
+    - 192.168.40.134:2379
+  Key: ucenter.rpc
+Mysql:
+  DataSource: root:123456@tcp(127.0.0.1:3306)/mscoin?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+CacheRedis:
+  Host: 192.168.40.134:6379
+  Type: node
+  Pass: dream
+Captcha:
+  Vid: 669a1de3d3784602950e95e6
+  Key: 1bcb427ccf2c4b5da3e337334b9504a8
+JWT:
+  AccessSecret: "!@#$mscoin"
+  AccessExpire: 604800
+MarketRpc:
+  Etcd:
+    Hosts:
+      - 192.168.40.134:2379
+    Key: market.rpc
+Kafka:
+  Addr: 192.168.40.134:9092
+  WriteCap: 100
+  ReadCap: 100
+  Group: "ucenter-consumer"
+ExchangeRpc:
+  Etcd:
+    Hosts:
+      - 192.168.40.134:2379
+    Key: exchange.rpc
+  NonBlock: true

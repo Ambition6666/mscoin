@@ -1,0 +1,991 @@
+2024-07-22T16:01:51.634+08:00	[34;1m info [0;22m	验证码为: 8711
+	caller=register/register_logic.go:75	trace=82d6aa50e135a794a09bbd838bfacee8	span=b3f5b3942534bf47
+2024-07-22T16:01:51.634+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	span=b3f5b3942534bf47	caller=register/register_logic.go:76	trace=82d6aa50e135a794a09bbd838bfacee8
+2024-07-22T16:01:51.671+08:00	[34;1m info [0;22m	127.0.0.1:62983 - /register.Register/sendCode - {"country":"中国"}	duration=41.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=82d6aa50e135a794a09bbd838bfacee8	span=b3f5b3942534bf47
+2024-07-22T16:04:16.250+08:00	[34;1m info [0;22m	验证码为: 3213
+	caller=register/register_logic.go:75	trace=931c6072713c9239e0bd0c137816445d	span=f7cc9d7cf7721962
+2024-07-22T16:04:16.250+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	caller=register/register_logic.go:76	trace=931c6072713c9239e0bd0c137816445d	span=f7cc9d7cf7721962
+2024-07-22T16:04:16.282+08:00	[34;1m info [0;22m	127.0.0.1:63211 - /register.Register/sendCode - {"country":"中国"}	caller=serverinterceptors/statinterceptor.go:90	trace=931c6072713c9239e0bd0c137816445d	span=f7cc9d7cf7721962	duration=32.2ms
+2024-07-22T16:11:36.440+08:00	[34;1m info [0;22m	验证码为: 5428
+	span=cc4f32650921f9cb	caller=register/register_logic.go:75	trace=1efe4200e1a4e629afe1a753cf7038d2
+2024-07-22T16:11:36.440+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	trace=1efe4200e1a4e629afe1a753cf7038d2	span=cc4f32650921f9cb	caller=register/register_logic.go:76
+2024-07-22T16:11:36.443+08:00	[34;1m info [0;22m	127.0.0.1:63636 - /register.Register/sendCode - {"country":"中国"}	duration=2.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=1efe4200e1a4e629afe1a753cf7038d2	span=cc4f32650921f9cb
+2024-07-22T16:12:46.808+08:00	[34;1m info [0;22m	验证码为: 9843
+	trace=f2a66824bc89ff9de89a0ad482a45111	span=380d30c61de26185	caller=register/register_logic.go:75
+2024-07-22T16:12:46.808+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	caller=register/register_logic.go:76	trace=f2a66824bc89ff9de89a0ad482a45111	span=380d30c61de26185
+2024-07-22T16:12:46.810+08:00	[34;1m info [0;22m	127.0.0.1:63636 - /register.Register/sendCode - {"country":"中国"}	span=380d30c61de26185	duration=2.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=f2a66824bc89ff9de89a0ad482a45111
+2024-07-22T16:14:22.980+08:00	[34;1m info [0;22m	验证码为: 6470
+	caller=register/register_logic.go:75	trace=8a18979bf24544521a0a559f58effc10	span=d74508e5d0c3dc6c
+2024-07-22T16:14:22.980+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	caller=register/register_logic.go:76	trace=8a18979bf24544521a0a559f58effc10	span=d74508e5d0c3dc6c
+2024-07-22T16:14:23.012+08:00	[34;1m info [0;22m	127.0.0.1:64021 - /register.Register/sendCode - {"country":"中国"}	duration=33.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=8a18979bf24544521a0a559f58effc10	span=d74508e5d0c3dc6c
+2024-07-22T16:15:14.896+08:00	[34;1m info [0;22m	验证码为: 4156
+	span=b1f48a7417f51192	caller=register/register_logic.go:75	trace=330422860d12435df4f7d4a98332f73d
+2024-07-22T16:15:14.896+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	caller=register/register_logic.go:76	trace=330422860d12435df4f7d4a98332f73d	span=b1f48a7417f51192
+2024-07-22T16:15:14.899+08:00	[34;1m info [0;22m	127.0.0.1:64021 - /register.Register/sendCode - {"country":"中国"}	duration=2.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=330422860d12435df4f7d4a98332f73d	span=b1f48a7417f51192
+2024-07-22T16:16:42.923+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T16:16:42.923+08:00	[34;1m info [0;22m	127.0.0.1:64021 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721636200L2Hr8Cda94f"},"phone":"13322751159","code":"4156","country":"新加坡","ip":"192.168.40.1"}	duration=358.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=2cc13f88b76b68381d721718a3090408	span=8a72b92edc656dae
+2024-07-22T16:20:56.058+08:00	[34;1m info [0;22m	验证码为: 2021
+	trace=d786db85f35b3a936367fb2ed28ab48e	span=227b12d294d2f509	caller=register/register_logic.go:75
+2024-07-22T16:20:56.058+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	span=227b12d294d2f509	caller=register/register_logic.go:76	trace=d786db85f35b3a936367fb2ed28ab48e
+2024-07-22T16:20:56.060+08:00	[34;1m info [0;22m	127.0.0.1:64021 - /register.Register/sendCode - {"country":"中国"}	span=227b12d294d2f509	duration=3.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=d786db85f35b3a936367fb2ed28ab48e
+2024-07-22T16:24:08.347+08:00	[34;1m info [0;22m	验证码为: 7587
+	trace=55db380c36862c31580d4e29a7c73b83	span=e1a8b472f9a34d2d	caller=register/register_logic.go:75
+2024-07-22T16:24:08.348+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	caller=register/register_logic.go:76	trace=55db380c36862c31580d4e29a7c73b83	span=e1a8b472f9a34d2d
+2024-07-22T16:24:08.349+08:00	[34;1m info [0;22m	127.0.0.1:64021 - /register.Register/sendCode - {"country":"中国"}	duration=1.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=55db380c36862c31580d4e29a7c73b83	span=e1a8b472f9a34d2d
+2024-07-22T16:24:49.335+08:00	[34;1m info [0;22m	验证码为: 8602
+	caller=register/register_logic.go:75	trace=553ee3fd5a117e7903cc79201e5fcfaf	span=9d10615160024b7a
+2024-07-22T16:24:49.335+08:00	[34;1m info [0;22m	手机号码为: 
+, 国家区域为中国
+	trace=553ee3fd5a117e7903cc79201e5fcfaf	span=9d10615160024b7a	caller=register/register_logic.go:76
+2024-07-22T16:24:49.336+08:00	[34;1m info [0;22m	127.0.0.1:64021 - /register.Register/sendCode - {"country":"中国"}	duration=2.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=553ee3fd5a117e7903cc79201e5fcfaf	span=9d10615160024b7a
+2024-07-22T16:27:07.980+08:00	[34;1m info [0;22m	验证码为: 9690
+	caller=register/register_logic.go:75	trace=40024d83ba53f91cf7e1b878e1c22731	span=be5669a45bc10ba3
+2024-07-22T16:27:07.980+08:00	[34;1m info [0;22m	手机号码为: 13322751159
+, 国家区域为中国
+	trace=40024d83ba53f91cf7e1b878e1c22731	span=be5669a45bc10ba3	caller=register/register_logic.go:76
+2024-07-22T16:27:08.037+08:00	[34;1m info [0;22m	127.0.0.1:49231 - /register.Register/sendCode - {"phone":"13322751159","country":"中国"}	duration=61.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=40024d83ba53f91cf7e1b878e1c22731	span=be5669a45bc10ba3
+2024-07-22T16:28:12.359+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T16:28:12.366+08:00	[34;1m info [0;22m	127.0.0.1:49231 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721636888DUX9m4ea71e"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	span=8ce5cd399bcc40b9	duration=374.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=2e2c8108fd029b19baa81635dffdb7a3
+2024-07-22T16:37:04.739+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T16:37:04.741+08:00	[34;1m info [0;22m	127.0.0.1:50305 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721637422BBwxn43a983"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	span=656fa98bb8dc83a0	duration=365.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=5593b9ffb0d7ecf4f31f20ebb57c8dab
+2024-07-22T16:47:42.979+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T16:47:42.982+08:00	[34;1m info [0;22m	127.0.0.1:51108 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216380603ZMCchba1d2"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	span=3ef1d349c2d52916	duration=341.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=da8555a4d6781f23dc280b490309745b
+2024-07-22T16:54:51.481+08:00	[34;1m info [0;22m	127.0.0.1:51693 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216380603ZMCchba1d2"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	caller=serverinterceptors/statinterceptor.go:90	trace=2bb418a5c716cc503a26e0c74a52e0ad	span=a8699436cbc76dff	duration=409.1ms
+2024-07-22T16:55:33.790+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T16:55:33.790+08:00	[34;1m info [0;22m	127.0.0.1:51693 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721638527QIcNwz9d6ee"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=85.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=f2a09f9497bd9c89a416f45f8ee9966e	span=4c60c87c1d9bb9be
+2024-07-22T17:02:10.691+08:00	 info 	验证码为: 3461
+	caller=register/register_logic.go:77	trace=cc2792700ac29850807f315ff2fcb38c	span=70e9d1573387cebd
+2024-07-22T17:02:10.691+08:00	 info 	手机号码为: 13322751159
+, 国家区域为中国
+	caller=register/register_logic.go:78	trace=cc2792700ac29850807f315ff2fcb38c	span=70e9d1573387cebd
+2024-07-22T17:02:10.743+08:00	 info 	127.0.0.1:52378 - /register.Register/sendCode - {"phone":"13322751159","country":"中国"}	span=70e9d1573387cebd	duration=52.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=cc2792700ac29850807f315ff2fcb38c
+2024-07-22T17:02:16.578+08:00	 info 	127.0.0.1:52378 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721638527QIcNwz9d6ee"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	caller=serverinterceptors/statinterceptor.go:90	trace=5f507fdd282fa70e8d496bac38ac4faf	span=bfe4c94a64fa14a0	duration=317.5ms
+2024-07-22T18:41:35.779+08:00	 info 	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T18:41:35.779+08:00	 info 	127.0.0.1:60151 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216448930UeTgQ9225b"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=455.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=9c1cf264792fec2b7be37390ee0d826c	span=12019e0c724c1920
+2024-07-22T18:57:11.531+08:00	 info 	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T18:57:11.533+08:00	 info 	127.0.0.1:61396 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721645828AdRtF5f1326"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=375.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=e4241bb7627ee52d4190c74975ac3588	span=b12967ea93020e08
+2024-07-22T19:09:35.027+08:00	 info 	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T19:09:35.033+08:00	 info 	127.0.0.1:62419 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721646571c86h3u5719d"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	span=129505d96114cf66	duration=414.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=b16dd801d127fee271d424145af77053
+2024-07-22T19:16:48.434+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T19:16:48.435+08:00	[34;1m info [0;22m	127.0.0.1:63080 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216470078jkwHj28cd0"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=291.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=a23af724f9d8678e27ea8acd757936d2	span=a4d9d677347408e5
+2024-07-22T19:18:10.900+08:00	[34;1m info [0;22m	127.0.0.1:63221 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216470078jkwHj28cd0"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	caller=serverinterceptors/statinterceptor.go:90	trace=1441e36003a6bd1d24809684c35658ad	span=bc894c87f56976dc	duration=325.3ms
+2024-07-22T19:18:16.980+08:00	[34;1m info [0;22m	127.0.0.1:63221 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216470078jkwHj28cd0"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=77.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=639288ec28b504ae4b89063ea1bebfa0	span=8043fa890613c2bb
+2024-07-22T19:18:23.267+08:00	[34;1m info [0;22m	127.0.0.1:63221 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216470078jkwHj28cd0"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=70.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=a3329b37d9185c7fe8bf228094a4d8f8	span=8ef4c3a6485833c0
+2024-07-22T19:19:06.846+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T19:19:06.847+08:00	[34;1m info [0;22m	127.0.0.1:63221 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721647145tWNVbw8b5b5"},"phone":"13322751159","code":"2312","country":"中国","ip":"192.168.40.1"}	trace=c8f64f3e3e88e7d5d34b4badc8081ec3	span=6dbee9e37029e616	duration=77.6ms	caller=serverinterceptors/statinterceptor.go:90
+2024-07-22T19:35:22.734+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T19:35:22.747+08:00	[34;1m info [0;22m	127.0.0.1:65162 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216480169rs6cT83a2e"},"phone":"13322751159","code":"2312","country":"中国","ip":"192.168.40.1"}	duration=396.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=848dd9b26151f09cd907e22e6c062204	span=59a6f8bb54b06892
+2024-07-22T19:37:15.220+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-22T19:37:15.221+08:00	[34;1m info [0;22m	127.0.0.1:65162 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721648219EVywcL8e4dc"},"phone":"13322751159","code":"2312","country":"中国","ip":"192.168.40.1"}	duration=299.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=7a628e925ee80dc6cd92864cb15cc768	span=55beb7afe3091be9
+2024-07-22T19:41:38.185+08:00	[34;1m info [0;22m	验证码为: 5301
+	trace=0b11d473604b774a09e8d75a6b3ba40d	span=189a86d46fd67455	caller=register/register_logic.go:77
+2024-07-22T19:41:38.185+08:00	[34;1m info [0;22m	手机号码为: 13322751159
+, 国家区域为中国
+	caller=register/register_logic.go:78	trace=0b11d473604b774a09e8d75a6b3ba40d	span=189a86d46fd67455
+2024-07-22T19:41:38.249+08:00	[34;1m info [0;22m	127.0.0.1:49679 - /register.Register/sendCode - {"phone":"13322751159","country":"中国"}	duration=64.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=0b11d473604b774a09e8d75a6b3ba40d	span=189a86d46fd67455
+2024-07-22T19:41:59.919+08:00	[34;1m info [0;22m	127.0.0.1:49679 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721648496b22S4J1d31f"},"phone":"13322751159","code":"5301","country":"中国","ip":"192.168.40.1"}	span=f8a3be19bfc5a9e9	duration=0.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=96329afd2576e4b1d546130026ce0dc9
+2024-07-22T19:42:06.304+08:00	[34;1m info [0;22m	127.0.0.1:49679 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721648496b22S4J1d31f"},"phone":"13322751159","code":"5301","country":"中国","ip":"192.168.40.1"}	duration=0.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=55433f189c0630fcfbf9e4c66abb2a90	span=1372108be0511b98
+2024-07-22T19:53:02.640+08:00	[34;1m info [0;22m	127.0.0.1:50533 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721649181fTIvdNc584d"},"phone":"13322751159","code":"5301","country":"中国","ip":"192.168.40.1"}	duration=254.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=ddc517a90aab25cbd31df7123884e9fa	span=26656225b4b56d2e
+2024-07-22T19:57:03.015+08:00	[34;1m info [0;22m	127.0.0.1:50867 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721649420CxY5wZ03172"},"phone":"13322751159","code":"5301","country":"中国","ip":"192.168.40.1"}	duration=57.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=f11dba0226cbb66de5463406c7ed10d5	span=0ae09512f1fd3468
+2024-07-22T20:11:58.462+08:00	[34;1m info [0;22m	127.0.0.1:52063 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721650314tHa2J97ef26"},"phone":"13322751159","code":"5301","country":"中国","ip":"192.168.40.1"}	duration=51.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=fae8b4b0d5827fe993192eda0735a061	span=91262fb4d8fe69d1
+2024-07-22T20:21:21.275+08:00	[34;1m info [0;22m	127.0.0.1:52877 - /register.Register/registerByPhone - {"username":"13322751159","password":"123123","captcha":{"server":"https://0.vaptcha.com/verify","token":"17216508791Sgcsjb1558"},"phone":"13322751159","code":"5301","country":"中国","ip":"192.168.40.1"}	duration=40.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=bd00c050048fb7096c681a95f6d2ee9e	span=ab853ffd30e38562
+2024-07-22T20:29:19.465+08:00	[34;1m info [0;22m	验证码为: 5961
+	span=b0c4a82c2d0997cf	caller=register/register_logic.go:77	trace=cc36f2fb0c20fd7fbefbf21e9927533b
+2024-07-22T20:29:19.465+08:00	[34;1m info [0;22m	手机号码为: 13121211231
+, 国家区域为中国
+	span=b0c4a82c2d0997cf	caller=register/register_logic.go:78	trace=cc36f2fb0c20fd7fbefbf21e9927533b
+2024-07-22T20:29:19.527+08:00	[34;1m info [0;22m	127.0.0.1:53637 - /register.Register/sendCode - {"phone":"13121211231","country":"中国"}	span=b0c4a82c2d0997cf	duration=62.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=cc36f2fb0c20fd7fbefbf21e9927533b
+2024-07-22T20:30:13.038+08:00	[34;1m info [0;22m	127.0.0.1:53637 - /register.Register/registerByPhone - {"username":"13121211231","password":"13121211231","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721651411DEIcEz7bed2"},"phone":"13121211231","code":"5961","country":"中国","ip":"192.168.40.1"}	duration=0.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=2053c716f29355bfb895e48f308f2130	span=6fc946d771c870e8
+2024-07-22T20:32:20.525+08:00	[34;1m info [0;22m	127.0.0.1:53902 - /register.Register/registerByPhone - {"username":"13121211231","password":"13121211231","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721651411DEIcEz7bed2"},"phone":"13121211231","code":"5961","country":"中国","ip":"192.168.40.1"}	caller=serverinterceptors/statinterceptor.go:90	trace=cc4b5e7d3be8bbce465374b911b10562	span=f779a655dbfbe449	duration=0.5ms
+2024-07-22T20:36:13.063+08:00	[34;1m info [0;22m	127.0.0.1:54153 - /register.Register/registerByPhone - {"username":"13121211231","password":"13121211231","captcha":{"server":"https://0.vaptcha.com/verify","token":"172165176719XZIo22fb9"},"phone":"13121211231","code":"5961","country":"中国","ip":"192.168.40.1"}	duration=1.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=06c8a540f793003ab80b1e8303e2b8eb	span=434ac9c3f929e396
+2024-07-22T20:40:09.971+08:00	[34;1m info [0;22m	127.0.0.1:54520 - /register.Register/registerByPhone - {"username":"13121211231","password":"13121211231","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721652003Tb86jP91875"},"phone":"13121211231","code":"5961","country":"中国","ip":"192.168.40.1"}	duration=2.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=56eee1e05e134cee44f573010f6a0d44	span=b4f3493b51ceb3a0
+2024-07-22T20:47:29.148+08:00	[34;1m info [0;22m	127.0.0.1:55166 - /register.Register/registerByPhone - {"username":"13121211231","password":"13121211231","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721652199umbzaDf2028"},"phone":"13121211231","code":"5961","country":"中国","ip":"192.168.40.1"}	duration=0.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=e0230e19ed55bd4ffbed02730eacdd30	span=43f04a3817755a89
+2024-07-22T20:53:28.458+08:00	[34;1m info [0;22m	127.0.0.1:55844 - /register.Register/registerByPhone - {"username":"13121211231","password":"13121211231","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721652806OUP0gN64158"},"phone":"13121211231","code":"5961","country":"中国","ip":"192.168.40.1"}	duration=1.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=ec4286bb66d533d17c1a751ae35fc8b1	span=d0bfd1a98f70c40b
+2024-07-22T21:05:41.583+08:00	[34;1m info [0;22m	验证码为: 1396
+	span=5ce57c7491bc81d5	caller=register/register_logic.go:79	trace=3eb77e90837e96cb16aefe1fa5d18c5e
+2024-07-22T21:05:41.583+08:00	[34;1m info [0;22m	手机号码为: 13121211231
+, 国家区域为中国
+	caller=register/register_logic.go:80	trace=3eb77e90837e96cb16aefe1fa5d18c5e	span=5ce57c7491bc81d5
+2024-07-22T21:05:41.650+08:00	[34;1m info [0;22m	127.0.0.1:56884 - /register.Register/sendCode - {"phone":"13121211231","country":"中国"}	span=5ce57c7491bc81d5	duration=66.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=3eb77e90837e96cb16aefe1fa5d18c5e
+2024-07-22T21:06:16.978+08:00	[34;1m info [0;22m	127.0.0.1:56884 - /register.Register/registerByPhone - {"username":"13121211231","password":"13121211231","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721653553BOpvna9a516"},"phone":"13121211231","code":"1396","country":"中国","ip":"192.168.40.1"}	duration=9.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=cd77e463e8028515bde46f186849d688	span=4acd1f0c6c3be5ce
+2024-07-22T21:13:13.154+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:30:03.113+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:32:06.392+08:00	[34;1m info [0;22m	127.0.0.1:62111 - /login.Login/login - {"username":"13121211231","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721719800ksUbU336355"},"ip":"192.168.40.1"}	span=6443a76b019a7827	duration=245.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=df6f0b147070525bf37a0649df8a7428
+2024-07-23T15:32:30.880+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:32:30.899+08:00	[34;1m info [0;22m	127.0.0.1:62111 - /login.Login/login - {"username":"13121211231","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721719947i6Qg0I32f39"},"ip":"192.168.40.1"}	duration=91.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=6adf2fbbc9a3185844ec98889561f2a2	span=44a7f7fa944101bd
+2024-07-23T15:33:15.876+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:33:15.928+08:00	[34;1m info [0;22m	127.0.0.1:62110 - /register.Register/registerByPhone - {"username":"13322752259","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17217199941JOj8o860a5"},"phone":"13322752259","code":"9690","country":"中国","ip":"192.168.40.1"}	caller=serverinterceptors/statinterceptor.go:90	trace=4c18433ac30ae6c5bf4b9f347b5a3baf	span=b077039435f114e0	duration=125.5ms
+2024-07-23T15:33:56.308+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:33:56.322+08:00	[34;1m info [0;22m	127.0.0.1:62111 - /login.Login/login - {"username":"13322752259","password":"1223456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721720034oAvDVSecbc3"},"ip":"192.168.40.1"}	duration=87.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=cda994299e383e6edd2cfe4faceba0c7	span=90977dd641f1076b
+2024-07-23T15:42:56.067+08:00	[34;1m info [0;22m	127.0.0.1:62521 - /login.Login/login - {"username":"13322752259","password":"1223456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721720034oAvDVSecbc3"},"ip":"192.168.40.1"}	duration=287.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=040d98e340800440c95325e47d12fa81	span=4ca370f03028fa15
+2024-07-23T15:43:44.994+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:43:45.023+08:00	[34;1m info [0;22m	127.0.0.1:62521 - /login.Login/login - {"username":"13322752259","password":"1223456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721720623eEBQzt62f13"},"ip":"192.168.40.1"}	duration=142.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=3a955b7d38510b17017770c634fa50c4	span=378324674918283a
+2024-07-23T15:50:38.704+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:50:38.737+08:00	[34;1m info [0;22m	127.0.0.1:62580 - /register.Register/registerByPhone - {"username":"13322753359","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721721034rhWGvy2fa85"},"phone":"13322753359","code":"9690","country":"中国","ip":"192.168.40.1"}	span=6dc03a933afad6b9	duration=298.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=31fcf116584f952ed5b6b9ead89d5060
+2024-07-23T15:51:01.567+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:51:01.589+08:00	[34;1m info [0;22m	127.0.0.1:62601 - /login.Login/login - {"username":"13322753359","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721721059gP2tnvd1ab1"},"ip":"192.168.40.1"}	duration=91.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=868a4719e1a18ba9893714f18fe77638	span=13a94da499f136f0
+2024-07-23T15:54:03.547+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:54:03.584+08:00	[34;1m info [0;22m	127.0.0.1:62735 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17217212421LO5iJ97667"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	span=2e0caece4334ad8d	duration=311.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=5645a4d507654ed99c170e74b349df68
+2024-07-23T15:54:28.077+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:54:28.093+08:00	[34;1m info [0;22m	127.0.0.1:62736 - /login.Login/login - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721721264eUoAIf41fd1"},"ip":"192.168.40.1"}	duration=95.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=7882f753b3b0b3056120c76190e8c784	span=26f32ec9daa4016d
+2024-07-23T15:57:03.434+08:00	[34;1m info [0;22m	127.0.0.1:62805 - /login.Login/login - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721721264eUoAIf41fd1"},"ip":"192.168.40.1"}	duration=271.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=152fe4ffb7ae7ce0c001cc1e25835119	span=e748dd6143f2c1fb
+2024-07-23T15:57:39.649+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T15:57:39.667+08:00	[34;1m info [0;22m	127.0.0.1:62805 - /login.Login/login - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721721458SOv9Q7b5dfd"},"ip":"192.168.40.1"}	span=e9b41a578b18c8b8	duration=86.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=f36e51d675081d89bb271aa12ab8e65a
+2024-07-23T16:03:22.673+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:03:22.706+08:00	[34;1m info [0;22m	127.0.0.1:62960 - /register.Register/registerByPhone - {"username":"13322752259","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17217217959ZMfaf22a0c"},"phone":"13322752259","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=342.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=658f3772367e04b954407f679989e7cd	span=049987174699a7ce
+2024-07-23T16:04:37.676+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:04:37.690+08:00	[34;1m info [0;22m	127.0.0.1:62959 - /login.Login/login - {"username":"13322752259","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721721873hmjm48d5400"},"ip":"192.168.40.1"}	trace=bfcaf4f2b7206e7139d13e881db13150	span=237599148d39e8f9	duration=89.3ms	caller=serverinterceptors/statinterceptor.go:90
+2024-07-23T16:10:29.767+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:10:29.810+08:00	[34;1m info [0;22m	127.0.0.1:63086 - /login.Login/login - {"username":"13322752259","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721722228K6B9Jrf4572"},"ip":"192.168.40.1"}	trace=3e63699314d06c077bbabc92772ef668	span=85e8ef32747f20ab	duration=324.2ms	caller=serverinterceptors/statinterceptor.go:90
+2024-07-23T16:11:19.265+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:11:19.290+08:00	[34;1m info [0;22m	127.0.0.1:63085 - /register.Register/registerByPhone - {"username":"13322753359","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721722277Q852dObcb39"},"phone":"13322753359","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=96.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=7c3fb87acbf2c015abbfc1d78666c88c	span=9f40af88c51e732d
+2024-07-23T16:11:46.525+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:11:46.540+08:00	[34;1m info [0;22m	127.0.0.1:63086 - /login.Login/login - {"username":"13322753359","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721722305rGyVMq125f2"},"ip":"192.168.40.1"}	duration=86.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=037b248ded94fd983ff4fe16c2aae0bc	span=7f36eb5fa1a5abf3
+2024-07-23T16:18:14.839+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:22:15.319+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:22:15.361+08:00	[34;1m info [0;22m	127.0.0.1:63277 - /register.Register/registerByPhone - {"username":"13322754459","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721722933ScYFaz98155"},"phone":"13322754459","code":"3424","country":"中国","ip":"192.168.40.1"}	caller=serverinterceptors/statinterceptor.go:90	trace=38ba2e4c862a1a6f3874f139950221b8	span=18b94c79532746d8	duration=333.8ms
+2024-07-23T16:37:29.321+08:00	[34;1m info [0;22m	验证码为: 7007
+	caller=register/register_logic.go:79	trace=06d3b4e4d7c1455af7850727eb6e8c55	span=6b0478389b95421a
+2024-07-23T16:37:29.321+08:00	[34;1m info [0;22m	手机号码为: 13322751159
+, 国家区域为中国
+	caller=register/register_logic.go:80	trace=06d3b4e4d7c1455af7850727eb6e8c55	span=6b0478389b95421a
+2024-07-23T16:37:29.367+08:00	[34;1m info [0;22m	127.0.0.1:63498 - /register.Register/sendCode - {"phone":"13322751159","country":"中国"}	caller=serverinterceptors/statinterceptor.go:90	trace=06d3b4e4d7c1455af7850727eb6e8c55	span=6b0478389b95421a	duration=46.8ms
+2024-07-23T16:38:25.521+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:38:25.557+08:00	[34;1m info [0;22m	127.0.0.1:63498 - /register.Register/registerByPhone - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721723903TGhJxG83687"},"phone":"13322751159","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=343.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=5f21286d2e3c2f4134735082f43ed2d8	span=771af620dff5726d
+2024-07-23T16:38:55.662+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:38:55.677+08:00	[34;1m info [0;22m	127.0.0.1:63499 - /login.Login/login - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721723933jJxrjz54ca5"},"ip":"192.168.40.1"}	duration=87.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=0b309ebf14639c37cc6244ecf36722bb	span=61ffe739b0140ce7
+2024-07-23T16:43:32.408+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:43:32.469+08:00	[34;1m info [0;22m	127.0.0.1:63677 - /register.Register/registerByPhone - {"username":"13322752259","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721724210sMR46jcd0e6"},"phone":"13322752259","code":"4324","country":"中国","ip":"192.168.40.1"}	span=2b498c3cc952988b	duration=360.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=9ec46e5647c621655f84f097fc3be2b9
+2024-07-23T16:54:01.974+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:54:01.984+08:00	[34;1m info [0;22m	127.0.0.1:63806 - /register.Register/registerByPhone - {"username":"13322755559","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721724840Y0AmKj7c3ad"},"phone":"13322755559","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=339.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=2148e42a8274a6f8280576c5355af463	span=6a64be3d9b4cce99
+2024-07-23T16:54:08.144+08:00	[34;1m info [0;22m	127.0.0.1:63806 - /register.Register/registerByPhone - {"username":"13322755559","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721724840Y0AmKj7c3ad"},"phone":"13322755559","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=69.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=00bf27881f77c2a224f3d772b491a818	span=b341392b456c443b
+2024-07-23T16:57:33.022+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T16:57:33.028+08:00	[34;1m info [0;22m	127.0.0.1:63884 - /register.Register/registerByPhone - {"username":"13322755559","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721725051E5eHp83142f"},"phone":"13322755559","code":"9690","country":"中国","ip":"192.168.40.1"}	duration=296.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=0e0dcf7db0ec67d4231d2e7a7b4993ab	span=a36ed96d66ab24be
+2024-07-23T17:00:56.519+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T17:00:56.526+08:00	[34;1m info [0;22m	127.0.0.1:63981 - /register.Register/registerByPhone - {"username":"13322755559","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721725255nRS1Q2bc052"},"phone":"13322755559","code":"9690","country":"中国","ip":"192.168.40.1"}	span=6b966e3e379fb5d3	duration=288.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=4abb512c91aeee88344edb381324c51c
+2024-07-23T17:06:28.723+08:00	 info 	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T18:26:33.287+08:00	 info 	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T18:30:29.636+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T18:30:29.643+08:00	[34;1m info [0;22m	127.0.0.1:65524 - /register.Register/registerByPhone - {"username":"13324343221","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17217306277MicCE313c9"},"phone":"13324343221","code":"3211","country":"中国","ip":"192.168.40.1"}	trace=ca9ef42387bb50d3649b40c446f27e6a	span=d98a0727859621f9	duration=273.2ms	caller=serverinterceptors/statinterceptor.go:90
+2024-07-23T18:35:55.886+08:00	 info 	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T18:39:21.276+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T18:39:21.337+08:00	[34;1m info [0;22m	127.0.0.1:49323 - /register.Register/registerByPhone - {"username":"13324343221","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721731159m3uy4445d60"},"phone":"13324343221","code":"3211","country":"中国","ip":"192.168.40.1"}	duration=353.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=7ea13e7a9adced768a098440cdcf1ccb	span=a6c26a95501a16db
+2024-07-23T18:41:21.987+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-23T18:41:22.026+08:00	[34;1m info [0;22m	127.0.0.1:49324 - /login.Login/login - {"username":"13324343221","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1721731280XdPZeU43372"},"ip":"192.168.40.1"}	duration=288.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=b458a182a66a3167e133b8010453b068	span=c57ea88cd953bf3b
+2024-07-30T21:22:57.462+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-30T21:22:57.584+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1722345773HoGDP56a36e"},"ip":"192.168.40.1"}	duration=484.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=7dc77f633704da6d85b762f9961bb4b2	span=0e1e617fdbe4bcba
+2024-07-30T21:23:09.076+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13322751159","password":"123444456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1722345773HoGDP56a36e"},"ip":"192.168.40.1"}	duration=72.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=ee0255543447d7903afad2e2cbb1e114	span=6da959fd5132fc33
+2024-07-30T21:23:13.655+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13322751159","password":"12344456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1722345773HoGDP56a36e"},"ip":"192.168.40.1"}	duration=70.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=57e110e026f745e013918ec5325cda97	span=50d237be4ee6cba8
+2024-07-30T21:23:20.738+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1722345773HoGDP56a36e"},"ip":"192.168.40.1"}	trace=6b776e7f067e463bb5907517682f8fb3	span=bbc1affc8aaef162	duration=70.2ms	caller=serverinterceptors/statinterceptor.go:90
+2024-07-30T21:24:24.192+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-30T21:24:24.211+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1722345861foghLI1e283"},"ip":"192.168.40.1"}	trace=55c6924cc6dc4b237fa16e33cc3c7069	span=9b8f7337be526220	duration=97.6ms	caller=serverinterceptors/statinterceptor.go:90
+2024-07-30T21:24:56.353+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13324343221","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1722345861foghLI1e283"},"ip":"192.168.40.1"}	duration=70.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=cb3b39cee8f5631998099946a090adb8	span=6e8600e6e35fb3bd
+2024-07-30T21:25:32.806+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-30T21:25:32.826+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13324343221","password":"13324343221","captcha":{"server":"https://0.vaptcha.com/verify","token":"17223459304yOHZm12eb5"},"ip":"192.168.40.1"}	span=6e6e0a8dc61d7185	duration=97.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=31e7ea920063c337ecec93147530f9f7
+2024-07-30T21:25:38.757+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13324343221","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17223459304yOHZm12eb5"},"ip":"192.168.40.1"}	caller=serverinterceptors/statinterceptor.go:90	trace=1dc47a8690e76ad132342b968361b526	span=618519f1d25ee3c6	duration=70.2ms
+2024-07-30T21:26:02.443+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-07-30T21:26:02.459+08:00	[34;1m info [0;22m	127.0.0.1:55110 - /login.Login/login - {"username":"13324343221","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"172234596035pLCr84493"},"ip":"192.168.40.1"}	duration=90.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=0f329ad1493206694fbe130e40035534	span=05123b50ff38ebbb
+2024-08-01T15:08:05.757+08:00	[34;1m info [0;22m	127.0.0.1:51955 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=7d200f2c5fc81db2360246a0a611a71e	span=213d04252aaf2d5b	duration=0.0ms
+2024-08-01T15:08:05.793+08:00	[34;1m info [0;22m	127.0.0.1:51955 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=3612247cee42907a	duration=0.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=8ac03c4ed99e013e65860dd1dbaabaad
+2024-08-01T15:08:24.230+08:00	[34;1m info [0;22m	127.0.0.1:51955 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=4.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=13d3aaf16413495233a7ea9ab81df0f4	span=500aab031e937a6c
+2024-08-01T15:08:24.363+08:00	[34;1m info [0;22m	127.0.0.1:51955 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=0.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=86e98767495db6cda512cb2eb913c405	span=9eb00a7e32e8a527
+2024-08-01T15:10:04.127+08:00	[34;1m info [0;22m	127.0.0.1:52414 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=0.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=eb01c9fabed78043829f31a434384d92	span=5ec2083990609ae1
+2024-08-01T15:10:04.136+08:00	[34;1m info [0;22m	127.0.0.1:52414 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=1.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=6cae6883ba31034a34614419692be0e5	span=ff8667feacf7a0c4
+2024-08-01T15:17:35.014+08:00	[34;1m info [0;22m	127.0.0.1:53283 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=7.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=9a1446b7fb11643cd23cdaa4da18ba37	span=ece1ba37d398324e
+2024-08-01T15:17:35.019+08:00	[34;1m info [0;22m	127.0.0.1:53283 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=fdf7a4091580c6385880d42ed408d547	span=6333a068e5f27561	duration=13.1ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T19:31:45.868+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=40.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=66c67f74172468ec642899e3c75bb6f9	span=aadd747e553f0a84
+2024-08-03T19:31:45.868+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=1abb7896d22cf84d535867148b746ebc	span=581cf83b95fc6533	duration=40.3ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T19:35:15.039+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=22627c089e8847ed1ed8a5a33841990a	span=789fb260f565f1b0	duration=16.8ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T19:35:15.044+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=60e9cc850969ba44	duration=21.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=99b70972e16c75cfe6979ce257da59f2
+2024-08-03T19:35:22.216+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=2ca9b36d19fbefab	duration=11.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=6bce3a6a8e99c211b5c72f37eced3d46
+2024-08-03T19:35:22.227+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=27.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=89168037fb0258bd309327078ff0b549	span=9800b8c76a14553d
+2024-08-03T19:37:31.216+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=b4a04ee1e94c7a02f501ade28032d622	span=36191ec9a20ad2bc	duration=109.6ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T19:37:31.232+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=169b553b498b8e27ca8fceee3f93c296	span=2f08ef1642f943ac	duration=133.9ms
+2024-08-03T19:38:30.314+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=621309189839fb7124137e39b0a14c0d	span=68d8a1f42f1622a0	duration=24.3ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T19:38:30.342+08:00	[34;1m info [0;22m	127.0.0.1:65010 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=39.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=2c485b222c9a2754e396d558ae189eb7	span=ca5a46d733ddc460
+2024-08-03T19:54:30.425+08:00	[34;1m info [0;22m	127.0.0.1:52545 - /member.Member/findMemberById - {"memberId":11}	duration=40.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=309653c868dcb38f67d9484efb211844	span=b64217b43dbc062f
+2024-08-03T19:54:42.720+08:00	[34;1m info [0;22m	127.0.0.1:52898 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=29.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=4f3f4997bb1548c34f1363318bcb5196	span=71f215f021f1de6b
+2024-08-03T19:54:42.747+08:00	[34;1m info [0;22m	127.0.0.1:52898 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=fb8785ce3cd49c55b56b2f2377bf7231	span=fd867791ab0b3c2a	duration=25.3ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T19:54:50.824+08:00	[34;1m info [0;22m	127.0.0.1:52545 - /member.Member/findMemberById - {"memberId":11}	duration=3.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=55eded460a2efc534e805ea3bbaa8f9f	span=d538e22cac444fb8
+2024-08-03T20:10:47.583+08:00	[34;1m info [0;22m	127.0.0.1:55591 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=76.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=407eff4b9befd15fe3adb720cdf078b7	span=5343f432c8c01fdf
+2024-08-03T20:10:47.618+08:00	[34;1m info [0;22m	127.0.0.1:55591 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=89.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=0666ec4cda345dd785f61b213fd8d883	span=5a36679565679ab7
+2024-08-03T20:11:17.116+08:00	[34;1m info [0;22m	127.0.0.1:55589 - /member.Member/findMemberById - {"memberId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=272f262bd1b6b06a457f1695a5797ce4	span=c5d1a82b653bdaa1	duration=16.4ms
+2024-08-03T20:26:39.245+08:00	[34;1m info [0;22m	127.0.0.1:57913 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=23.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=68d653d306e7b5ea38a37c4179ebafe9	span=f49d0831366ac8ac
+2024-08-03T20:26:39.259+08:00	[34;1m info [0;22m	127.0.0.1:57913 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=b79d8a622f66bfbe759f17b53d511876	span=58d9b9145890c349	duration=36.6ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T20:27:00.241+08:00	[34;1m info [0;22m	127.0.0.1:57913 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	span=12bb4a0b1718e9d4	duration=16.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=f1838fc841df1044197ec1d20fcdbf77
+2024-08-03T20:27:00.284+08:00	[34;1m info [0;22m	127.0.0.1:57913 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=47.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=f4141041c35351a19bdfde6661ce3791	span=a224a8de1a82c231
+2024-08-03T20:27:10.522+08:00	[34;1m info [0;22m	127.0.0.1:57740 - /member.Member/findMemberById - {"memberId":11}	duration=7.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=a949238bee42a5205901b756ce098ee2	span=89c4600ba1fc8bac
+2024-08-03T20:28:31.644+08:00	[34;1m info [0;22m	127.0.0.1:57913 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=64f15dacb6c13b13	duration=17.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=e397de4f2cd03fa156f4a7d98488525e
+2024-08-03T20:28:31.652+08:00	[34;1m info [0;22m	127.0.0.1:57913 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=33925865981521b05283850bfc304cb3	span=c0ba14e72dae495b	duration=25.2ms
+2024-08-03T20:39:20.486+08:00	[34;1m info [0;22m	127.0.0.1:58973 - /member.Member/findMemberById - {"memberId":11}	span=dad7da4946112c89	duration=13.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=9b01c9e560c356e2d602969aa1119603
+2024-08-03T20:44:04.900+08:00	[34;1m info [0;22m	127.0.0.1:59580 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=8dc20772b5b9cd064fc8b57419da078e	span=0458939baf118d4d	duration=31.6ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T20:44:04.927+08:00	[34;1m info [0;22m	127.0.0.1:59580 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=79319bc499733082	duration=56.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=e4783024755afcae00263bf3f7ca3549
+2024-08-03T20:44:11.932+08:00	[34;1m info [0;22m	127.0.0.1:58973 - /member.Member/findMemberById - {"memberId":11}	duration=8.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=085d070cf238290e294b2a0134ef60cc	span=4df7d3da2c9cbcbe
+2024-08-03T20:45:19.201+08:00	[34;1m info [0;22m	127.0.0.1:59580 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=12392417605289781292a25931a6369a	span=9b50c3d7522f00f3	duration=42.1ms
+2024-08-03T20:45:19.225+08:00	[34;1m info [0;22m	127.0.0.1:59580 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=68.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=71c9bd717f5560b692785fc7960297f5	span=795129aa6c353a4a
+2024-08-03T20:45:24.650+08:00	[34;1m info [0;22m	127.0.0.1:59813 - /member.Member/findMemberById - {"memberId":11}	span=ee4f35d5acb9b263	duration=2.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=442dadfaf3613dab7a2f6f4a87507b5b
+2024-08-03T20:46:16.801+08:00	[34;1m info [0;22m	127.0.0.1:59580 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=42.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=0c9e2ae82935eb865ba02653b1e68913	span=bf31fbc568c6c804
+2024-08-03T20:46:17.095+08:00	[34;1m info [0;22m	127.0.0.1:59580 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=b401b4c0c886214381e286c3f2ca9033	span=42ef6eb7dfb26829	duration=337.5ms
+2024-08-03T20:46:21.849+08:00	[34;1m info [0;22m	127.0.0.1:59813 - /member.Member/findMemberById - {"memberId":11}	duration=8.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=099c674a7a743e3e8770361c99a88a29	span=396f17455593f194
+2024-08-03T20:49:31.918+08:00	[34;1m info [0;22m	127.0.0.1:60167 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=39.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=17a5c6011d321a8d37e20e44a6db3569	span=0f79234c229ac717
+2024-08-03T20:49:31.919+08:00	[34;1m info [0;22m	127.0.0.1:60167 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=41.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=062f98c2c277e6dad8fa37bdb7e4f75c	span=d6eaea182ffdde27
+2024-08-03T20:49:39.339+08:00	[34;1m info [0;22m	127.0.0.1:60164 - /member.Member/findMemberById - {"memberId":11}	duration=30.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=0a170024768866c91c722148003b2e6b	span=c83bd0c2bc78768f
+2024-08-03T20:56:05.365+08:00	[34;1m info [0;22m	127.0.0.1:60915 - /member.Member/findMemberById - {"memberId":11}	duration=65.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=2b1ee1efc471725729cd3bd280ce1597	span=d585cd59ae78ce81
+2024-08-03T20:58:29.569+08:00	[34;1m info [0;22m	127.0.0.1:61327 - /member.Member/findMemberById - {"memberId":11}	duration=7.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=a7a12b6653bac0d81d780dd04d09e552	span=4579d822e4ea6ef6
+2024-08-03T20:59:07.070+08:00	[34;1m info [0;22m	127.0.0.1:61452 - /member.Member/findMemberById - {"memberId":11}	trace=841fed0cae3981bd3359773e708154b7	span=9eecee955a49a15e	duration=14.8ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T21:02:05.369+08:00	[34;1m info [0;22m	127.0.0.1:61743 - /member.Member/findMemberById - {"memberId":11}	duration=32.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=ad32e5242137156cd3e6207699cda9ce	span=b5f574fd3ac5e517
+2024-08-03T21:02:05.414+08:00	[34;1m info [0;22m	127.0.0.1:61744 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=11.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=ad32e5242137156cd3e6207699cda9ce	span=8ead40b1b85053a2
+2024-08-03T21:02:05.431+08:00	[34;1m info [0;22m	127.0.0.1:61744 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=11.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=ad32e5242137156cd3e6207699cda9ce	span=6eb306e319142c3b
+2024-08-03T21:06:45.121+08:00	[34;1m info [0;22m	127.0.0.1:62061 - /member.Member/findMemberById - {"memberId":11}	duration=5.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=13ab194955d6ad7288975de8da2b68c9	span=0c58da026f782ec8
+2024-08-03T21:06:45.147+08:00	[34;1m info [0;22m	127.0.0.1:62060 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=13ab194955d6ad7288975de8da2b68c9	span=fdeec2b040f075ed	duration=16.1ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T21:06:45.156+08:00	[34;1m info [0;22m	127.0.0.1:62060 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=6.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=13ab194955d6ad7288975de8da2b68c9	span=fbc080728b8d93d2
+2024-08-03T21:12:30.923+08:00	[34;1m info [0;22m	127.0.0.1:62608 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=8db0a88487e95210	duration=68.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=8ba562101ecc23599c2e9b791b8a6522
+2024-08-03T21:12:30.964+08:00	[34;1m info [0;22m	127.0.0.1:62608 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=6db9b0fa9630d34baed5286d9c965ba6	span=812e648397b4c718	duration=109.2ms
+2024-08-03T21:12:41.148+08:00	[34;1m info [0;22m	127.0.0.1:62848 - /member.Member/findMemberById - {"memberId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=c1fabcb3ca67c7126b1e83331674b915	span=b662e57c3bf5a547	duration=4.6ms
+2024-08-03T21:12:41.163+08:00	[34;1m info [0;22m	127.0.0.1:62849 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=9.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=c1fabcb3ca67c7126b1e83331674b915	span=70ce5b559a92e253
+2024-08-03T21:12:41.169+08:00	[34;1m info [0;22m	127.0.0.1:62849 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=4.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=c1fabcb3ca67c7126b1e83331674b915	span=2fa1bc5aec24987c
+2024-08-03T21:36:08.096+08:00	[34;1m info [0;22m	127.0.0.1:65531 - /member.Member/findMemberById - {"memberId":11}	duration=21.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=f0fa3507a3ba8701f83d3f385c3f05e1	span=c41a4f3a5ef32029
+2024-08-03T21:36:08.136+08:00	[34;1m info [0;22m	127.0.0.1:65532 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	span=d0289f22dbf7fd7a	duration=7.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=f0fa3507a3ba8701f83d3f385c3f05e1
+2024-08-03T21:36:08.143+08:00	[34;1m info [0;22m	127.0.0.1:65532 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=e5fc1f06279e228a	duration=3.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=f0fa3507a3ba8701f83d3f385c3f05e1
+2024-08-03T21:36:09.420+08:00	[34;1m info [0;22m	127.0.0.1:65205 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=e32197663fb3e150cfcaa3a1aa4bcef8	span=cb47781a395480e5	duration=16.2ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-03T21:36:09.431+08:00	[34;1m info [0;22m	127.0.0.1:65205 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=11.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=3c0dcd5cf5017a2b087ddca6b4d5f0b3	span=df030a834bc77999
+2024-08-03T21:36:09.454+08:00	[34;1m info [0;22m	127.0.0.1:65205 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=33.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=d135d6e2048d487bd1d410183f902129	span=2a0a878e8f3ac20e
+2024-08-03T21:36:09.454+08:00	[34;1m info [0;22m	127.0.0.1:65205 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=35.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=4bac3901edc0af52dcd5af4a128fcc90	span=4f08475042d39cc2
+2024-08-03T21:36:15.704+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":619506.888,"orderId":"E9219441722692168152","symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:41
+2024-08-03T21:36:23.988+08:00	[34;1m info [0;22m	127.0.0.1:65205 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=c810b0deea6071cd544bbfbe70e4e64c	span=aa804ae03e6a41b3	duration=217.3ms
+2024-08-03T21:36:24.070+08:00	[34;1m info [0;22m	127.0.0.1:65205 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=190.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=d9a90ef73e28ad7f8e07b6e48371317c	span=84cb33cb31becef2
+2024-08-04T16:32:01.487+08:00	[34;1m info [0;22m	127.0.0.1:59160 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=84.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=592ad35c8ec82ff5e2d106edee837184	span=d7f1d1ba0c901851
+2024-08-04T16:32:01.488+08:00	[34;1m info [0;22m	127.0.0.1:59160 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=84.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=cded50944bde60c1de3c679c7d177320	span=cff114f391bcee86
+2024-08-04T16:33:07.748+08:00	[34;1m info [0;22m	127.0.0.1:59099 - /member.Member/findMemberById - {"memberId":11}	trace=a6037bac85c07662a1b7019184e32be2	span=330d912c2d7b919a	duration=21.7ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-04T16:33:07.784+08:00	[34;1m info [0;22m	127.0.0.1:59100 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=5.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=a6037bac85c07662a1b7019184e32be2	span=0420519370ea2d8b
+2024-08-04T16:33:07.792+08:00	[34;1m info [0;22m	127.0.0.1:59100 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=5.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=a6037bac85c07662a1b7019184e32be2	span=e1771ce8513a74c9
+2024-08-04T16:33:08.943+08:00	[34;1m info [0;22m	127.0.0.1:59160 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	span=6514106a552d0ca8	duration=24.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=8800f1d195d6c2ce2e19d49ff388563e
+2024-08-04T16:33:08.944+08:00	[34;1m info [0;22m	127.0.0.1:59160 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=26.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=ed5db190446b7b260ac3d3a20c0d0314	span=1d8cdf3aa9193e58
+2024-08-04T16:33:08.990+08:00	[34;1m info [0;22m	127.0.0.1:59160 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=39.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=fd6cb46a47a32189968a472f5f981e4a	span=bf0e56641903922f
+2024-08-04T16:33:08.994+08:00	[34;1m info [0;22m	127.0.0.1:59160 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=3104ae65f3f909fba336d7ab695c1dc7	span=6990ef5cf4084dba	duration=43.4ms
+2024-08-04T16:33:13.817+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":6054808.76,"orderId":"E6550831722760387795","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:52
+2024-08-04T16:36:00.524+08:00	[34;1m info [0;22m	127.0.0.1:59160 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=8.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=0347c0af7060e6c99caf7f05bb299301	span=ff0fcdfc15ad0e7f
+2024-08-04T16:36:00.550+08:00	[34;1m info [0;22m	127.0.0.1:59160 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=18.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=eb91fd8052c6e4f2f6f623af2403a75c	span=cb7518594c0591ff
+2024-08-04T23:18:42.910+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=911b854047717cfded8ec3c0a7445bed	span=d00b4bcf13cb6706	duration=182.8ms
+2024-08-04T23:18:42.910+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=182.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=31f116c81d4e1d1434e9dd04059ca07a	span=b4eb626665b068d1
+2024-08-04T23:19:00.578+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=e9a1d403cd2de13a44b12b5ef932a7a1	span=92b1c37cdf8bc344	duration=20.7ms
+2024-08-04T23:19:00.599+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=ceebb9e7e308543aaa7f88a17ed31081	span=118732979e63eb1e	duration=39.1ms
+2024-08-04T23:19:29.476+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=16.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=a129d8bcc2fa51f4f20484345976b019	span=dee32c819576e6ed
+2024-08-04T23:19:29.478+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=18.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=07646f2110f82ca14ec7e0217e27dd65	span=4cdeb942e330b557
+2024-08-04T23:19:43.570+08:00	[34;1m info [0;22m	127.0.0.1:62533 - /member.Member/findMemberById - {"memberId":11}	duration=20.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=d03545c66c3f4c15a7c8f34b1f7333be	span=16fe8945def71046
+2024-08-04T23:19:43.594+08:00	[34;1m info [0;22m	127.0.0.1:62534 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=3.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=d03545c66c3f4c15a7c8f34b1f7333be	span=5e7ef72603c7cac4
+2024-08-04T23:19:43.600+08:00	[34;1m info [0;22m	127.0.0.1:62534 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=d03545c66c3f4c15a7c8f34b1f7333be	span=7f40d6e7f1676560	duration=5.6ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-04T23:19:44.771+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=c186eb01ee8e68292a1bb0eb0c3394d6	span=5d8e2bdee8d5f18f	duration=11.4ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-04T23:19:44.780+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=31.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=b354ec92947a642b0c1f9cab5daf99e9	span=91df566bf297df7c
+2024-08-04T23:19:44.838+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=68.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=19fadabae3ca68e147ce4ec67bac81c0	span=37d509211a2d9677
+2024-08-04T23:19:44.846+08:00	[34;1m info [0;22m	127.0.0.1:62811 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=85.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=d2d1a89ea2d0953baf46b91e37590798	span=530dda71c1bb7274
+2024-08-04T23:19:48.850+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":59401.0417,"orderId":"E5989081722784783603","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:54
+2024-08-05T20:42:12.749+08:00	[34;1m info [0;22m	127.0.0.1:60847 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=126.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=0b036b6303837f3931ba007ac4430365	span=de913da91889b2c1
+2024-08-05T20:42:12.749+08:00	[34;1m info [0;22m	127.0.0.1:60847 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=126.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=e532923d7fe261d3f25fc5f84d3800be	span=37b0b4e18dfbb71b
+2024-08-05T20:42:22.134+08:00	[34;1m info [0;22m	127.0.0.1:60627 - /member.Member/findMemberById - {"memberId":11}	duration=13.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=56eda025f1a36767880f974166c91714	span=aa362ab4ac3ae59b
+2024-08-05T20:42:22.155+08:00	[34;1m info [0;22m	127.0.0.1:60628 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=4.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=56eda025f1a36767880f974166c91714	span=e7be19c5e7ec9358
+2024-08-05T20:42:22.162+08:00	[34;1m info [0;22m	127.0.0.1:60628 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=6.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=56eda025f1a36767880f974166c91714	span=f70ea01f1e44783b
+2024-08-05T20:42:23.326+08:00	[34;1m info [0;22m	127.0.0.1:60847 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=31.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=7229138d5e13ad68fcd3caff3d314695	span=7cc667ab9c0f8ff4
+2024-08-05T20:42:23.340+08:00	[34;1m info [0;22m	127.0.0.1:60847 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=44.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=87889826da725e52d479a3c8cddda4af	span=5bc07fac6246342d
+2024-08-05T20:42:23.341+08:00	[34;1m info [0;22m	127.0.0.1:60847 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=46.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=0cb4c7af8145f615e833dba935ac6956	span=065fc53e42864661
+2024-08-05T20:42:23.351+08:00	[34;1m info [0;22m	127.0.0.1:60847 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=54.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=bb09ca7451990dcf4540f57132b3d0ba	span=3cc0a8bcc6cc01cf
+2024-08-05T20:42:28.644+08:00	[34;1m info [0;22m	127.0.0.1:60847 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=28.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=a97f7ec49e27999495a3f99fd17031e6	span=63a880b9fd2c3b7c
+2024-08-05T20:42:28.646+08:00	[34;1m info [0;22m	127.0.0.1:60847 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=28.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=c8f8b534b626b56665356858d2936bc9	span=1a2e18e520fb4287
+2024-08-05T20:42:29.795+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":508454.947,"orderId":"E8405681722861742168","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:54
+2024-08-06T20:17:29.907+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=4ffdf7eb40c6398f7d9eeec53e177492	span=9583da0fb344c52b	duration=221.5ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-06T20:17:29.908+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=227.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=aba2f8815445610458e45e5ae8cc0cd6	span=44043c9999e9a856
+2024-08-06T20:18:26.487+08:00	[34;1m info [0;22m	127.0.0.1:64765 - /member.Member/findMemberById - {"memberId":11}	trace=759b1043a80c2d3019442d4a9afe7d73	span=92898beede43f818	duration=18.8ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-06T20:18:26.499+08:00	[34;1m info [0;22m	127.0.0.1:64764 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=3.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=759b1043a80c2d3019442d4a9afe7d73	span=b638581a0e27d8e4
+2024-08-06T20:18:26.505+08:00	[34;1m info [0;22m	127.0.0.1:64764 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=4.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=759b1043a80c2d3019442d4a9afe7d73	span=607eb39c2f1061ba
+2024-08-06T20:18:27.639+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=610099d1ebfda9fc6cd7e67f92abf987	span=2bca98a273936cf8	duration=40.2ms
+2024-08-06T20:18:27.648+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=54.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=c80cf5e950aa4dbb27791f7a4e99a392	span=8bd055dc799fab00
+2024-08-06T20:18:27.655+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=57.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=23688c9302bb5dbe637b69f604efed1b	span=9c866e658dd2617f
+2024-08-06T20:18:27.656+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=5cd99d75acdea4aff6dc11801343073e	span=56128695c01bcaf2	duration=57.0ms
+2024-08-06T20:18:33.586+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":553380.828,"orderId":"E5368791722946706508","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:54
+2024-08-06T20:18:33.699+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=868513ef5fb2b545b894d513e5d0ece3	span=0b38b6137dcb6aef	duration=11.2ms
+2024-08-06T20:18:33.708+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=98ecc6937e12af4a	duration=21.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=ec51d131535bee54bc481788f5623a30
+2024-08-06T20:19:27.840+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=5cb6dbfef91959136b898ab882f9168e	span=3aedb7b05e0ac111	duration=8.2ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-06T20:19:27.844+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=20d0b6f5503be5b67a47df2fb3239e2c	span=d06087572843a56e	duration=10.9ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-06T20:20:03.635+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=39af240a06cb75c9	duration=8.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=2dcaca9dfd33dfdfefd4425a573c1c97
+2024-08-06T20:20:03.639+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=a4a8e0a4c45f30de6a8ba8ab608dd3a0	span=4cd9f5e0be45b309	duration=13.3ms
+2024-08-06T20:20:14.034+08:00	[34;1m info [0;22m	127.0.0.1:64765 - /member.Member/findMemberById - {"memberId":11}	duration=11.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=fed0b56c99ed80595506fbe71b0c5d03	span=c6ac2b666b84584c
+2024-08-06T20:20:14.062+08:00	[34;1m info [0;22m	127.0.0.1:64764 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=11.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=fed0b56c99ed80595506fbe71b0c5d03	span=b5d9d1b7486be3c8
+2024-08-06T20:20:14.075+08:00	[34;1m info [0;22m	127.0.0.1:64764 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=7.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=fed0b56c99ed80595506fbe71b0c5d03	span=50e1ba619ed0d3b7
+2024-08-06T20:20:15.263+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=4e75dac9b8edfedf	duration=101.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=dce43c82be8c1e7d83e9543939d26388
+2024-08-06T20:20:15.264+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	span=819573cc752dc5ee	duration=90.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=8e02f7003cb87ca274a9568217e05654
+2024-08-06T20:20:15.280+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=118.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=321e7c5edefb197b3e9d577a4e916afd	span=9786e6bcd9fc689e
+2024-08-06T20:20:15.339+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=177.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=dc679ce8deb8f6988a18e9b860373a30	span=5a6da360889e2d89
+2024-08-06T20:20:21.636+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":1,"money":100.1,"orderId":"E1167571722946814079","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:54
+2024-08-06T20:20:22.728+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":1,"money":100.1,"orderId":"E1167571722946814079","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:54
+2024-08-06T20:20:29.046+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=97.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=4e729405d55cb80df564eba68299285f	span=c6dc3a31afb82c85
+2024-08-06T20:20:29.066+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=69.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=ce0b6f2cece3b46a01fa85900b9c2a07	span=5509b920e7492098
+2024-08-06T20:21:02.447+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=f4aaa00df52cb6b68c4a33f60f07398c	span=9d54ad16823edaca	duration=33.0ms
+2024-08-06T20:21:02.449+08:00	[34;1m info [0;22m	127.0.0.1:64794 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=35.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=d1037a93a3b7262b0980a282d0267f47	span=42fe8b3ecf1a7f01
+2024-08-06T20:44:21.787+08:00	[34;1m info [0;22m	127.0.0.1:52955 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=185.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=bd5e1c2ead59ee2f55d8a78107662b39	span=47365c53fe9240f7
+2024-08-06T20:44:21.791+08:00	[34;1m info [0;22m	127.0.0.1:52955 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=185.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=f5ca4fc405f0725bed6f3a5d2f4ab73b	span=d83ce02eb736cc6a
+2024-08-06T20:50:08.112+08:00	[34;1m info [0;22m	127.0.0.1:54367 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=27.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=9466159d47a10f7d9d6e10ffb10539a3	span=4c2c37228ea1c85c
+2024-08-06T20:50:08.132+08:00	[34;1m info [0;22m	127.0.0.1:54367 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=43.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=3389879dd772e72854d36bb1b95bb3d0	span=8035415c4c8ae6c8
+2024-08-06T20:57:48.818+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=438.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=cd73d04824f5aa3a56ceae4f9ee11a5b	span=c28de53e1e0267a1
+2024-08-06T20:57:59.105+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=9f55473bfa31c46212168e4706ab4792	span=8a4165e9a8f4768a	duration=31.4ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-06T20:57:59.195+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=8db664443c54278b0f5d43675f0ecc8f	span=a928ae0a363b8074	duration=28.6ms
+2024-08-06T20:59:16.630+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=4b2836a0948f102d5c2bded809ca88db	span=c6acd562118a355e	duration=46.3ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-06T20:59:16.713+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=f9495e2bc16086d7b121ef57ba329dbf	span=076145220bc23038	duration=60.1ms
+2024-08-06T21:03:30.561+08:00	[34;1m info [0;22m	127.0.0.1:56343 - /member.Member/findMemberById - {"memberId":11}	span=2c19898457e920c4	duration=29.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=6b8c44b566982f67af9ca79d06e56c85
+2024-08-06T21:03:30.584+08:00	[34;1m info [0;22m	127.0.0.1:56344 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=2.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=6b8c44b566982f67af9ca79d06e56c85	span=355e0f8a395c1347
+2024-08-06T21:03:30.591+08:00	[34;1m info [0;22m	127.0.0.1:56344 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=6b8c44b566982f67af9ca79d06e56c85	span=71c71944992ed188	duration=2.2ms
+2024-08-06T21:03:31.808+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=4.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=b6e77c1d81ae6db9ae39305d4c21b896	span=c3bdef8d7416e824
+2024-08-06T21:03:31.812+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=10.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=bf47cd4ee2cbdf0dcb6bce3885cb1a2d	span=024d675af2cadb05
+2024-08-06T21:03:31.823+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	span=ff04ec71df856355	duration=21.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=7c89ab5377865932f5cd60001291e7dd
+2024-08-06T21:03:31.823+08:00	[34;1m info [0;22m	127.0.0.1:55278 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=08344b419cb2cfd007ef477038c146c5	span=418a251aec5e0a1f	duration=21.3ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-06T21:03:35.310+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":548722.174,"orderId":"E4727181722949410594","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:54
+2024-08-06T21:16:02.278+08:00	[34;1m info [0;22m	127.0.0.1:57733 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=128.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=3f1928e1b723c9a3ddb918b85e77882e	span=5848611adb94c6b2
+2024-08-06T21:16:02.538+08:00	[34;1m info [0;22m	127.0.0.1:57733 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	span=776be74d556e04d5	duration=314.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=f051ed5339ee9fc6856433de95981d9a
+2024-08-06T21:21:29.451+08:00	[34;1m info [0;22m	127.0.0.1:58554 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=148.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=9045fc0c3b2b79e583f589ccb13db33a	span=35343354ef6a7ccd
+2024-08-06T21:21:29.451+08:00	[34;1m info [0;22m	127.0.0.1:58554 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=173.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=86c36bfa1a5ca8dedd8827d54ea93fd6	span=a439710dfa0a15d1
+2024-08-08T20:01:16.703+08:00	[34;1m info [0;22m	验证码为: 1104
+	span=23119d5c855206eb	caller=register/register_logic.go:79	trace=96fbca6df842978f8a3a25608729017a
+2024-08-08T20:01:16.704+08:00	[34;1m info [0;22m	手机号码为: 13322751158
+, 国家区域为中国
+	span=23119d5c855206eb	caller=register/register_logic.go:80	trace=96fbca6df842978f8a3a25608729017a
+2024-08-08T20:01:16.799+08:00	[34;1m info [0;22m	127.0.0.1:50543 - /order.Register/sendCode - {"phone":"13322751158","country":"中国"}	caller=serverinterceptors/statinterceptor.go:90	trace=96fbca6df842978f8a3a25608729017a	span=23119d5c855206eb	duration=97.4ms
+2024-08-08T20:09:48.497+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-08-08T20:09:48.553+08:00	[34;1m info [0;22m	127.0.0.1:51065 - /login.Login/login - {"username":"13324343221","password":"13324343221","captcha":{"server":"https://0.vaptcha.com/verify","token":"17231189850ezA3Je207d"},"ip":"192.168.40.1"}	caller=serverinterceptors/statinterceptor.go:90	trace=10860c175b01eff17d300dcad8a2e5f8	span=5b0aad0af0ea3ee2	duration=404.4ms
+2024-08-08T20:09:55.610+08:00	[34;1m info [0;22m	127.0.0.1:51065 - /login.Login/login - {"username":"13324343221","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17231189850ezA3Je207d"},"ip":"192.168.40.1"}	span=daba479c45cef900	duration=67.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=5089e2bbf3a89753e51946f4c23e5f3d
+2024-08-08T20:10:19.034+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-08-08T20:10:19.056+08:00	[34;1m info [0;22m	127.0.0.1:51065 - /login.Login/login - {"username":"13324343221","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1723119016Dx2qtb112c1"},"ip":"192.168.40.1"}	duration=92.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=807241e1ec9ef44fbe6b2d343e4af0ee	span=02f68c75fbd0d704
+2024-08-08T20:12:15.023+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-08-08T20:12:46.827+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-08-08T20:12:46.851+08:00	[34;1m info [0;22m	127.0.0.1:51065 - /login.Login/login - {"username":"13322752259","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"17231191611kE6xu412c8"},"ip":"192.168.40.1"}	duration=101.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=0143e47ff5c29281508575ec724530ac	span=019285d76caacdfc
+2024-08-08T20:18:32.486+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-08-08T20:18:32.561+08:00	[34;1m info [0;22m	127.0.0.1:52544 - /order.Register/registerByPhone - {"username":"13322751158","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1723119507GApnxk27128"},"phone":"13322751158","code":"1104","country":"中国","ip":"192.168.40.1"}	duration=338.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=f3f3d9ee31ef6f0cec8dabb5e1e6e768	span=08c0e2a383dfdfe5
+2024-08-08T20:18:56.234+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-08-08T20:18:56.254+08:00	[34;1m info [0;22m	127.0.0.1:52545 - /login.Login/login - {"username":"13322751159","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1723119532pC7FGR21fd0"},"ip":"192.168.40.1"}	duration=91.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=0ea3e62d385e1df2cef7744f861e4306	span=6330bf738da85ba6
+2024-08-08T20:19:25.720+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-08-08T20:19:25.740+08:00	[34;1m info [0;22m	127.0.0.1:52545 - /login.Login/login - {"username":"13322751158","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1723119561bpYoVI86f6e"},"ip":"192.168.40.1"}	span=f54619381906ff7d	duration=95.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=4513327ccbfdaeea39b7aff640aefb3a
+2024-08-08T20:19:31.283+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=53.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=df2d12b1863a938a5610bd3101214794	span=9911cb5a42b3ca4f
+2024-08-08T20:19:31.301+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=70.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=1bda3d7193c4410fdf2a07903f7ad8d8	span=346ce30646ed50df
+2024-08-08T20:19:31.867+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=8.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=8795f059ffc1efb78bf666fe774ef3a7	span=f568d4809b19b2ce
+2024-08-08T20:19:31.872+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	trace=659f7434ef2e1072598561fd007c7eb9	span=b10c85b450d79634	duration=15.2ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:19:48.148+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=39.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=c4f16bf9f556b36ca81a4defdcecd8d2	span=4325bfecf376a15a
+2024-08-08T20:19:48.157+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=741e6396bfd6875572f0caea96118fb5	span=011cc3046fa76c55	duration=29.5ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:20:40.552+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=cf0c46fba7c6d4d7315872b322fef092	span=9e797c1450f86b9a	duration=13.4ms
+2024-08-08T20:20:40.564+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=11e919138e241a11873e3c93237d2cb3	span=577d7d3ff6e4309b	duration=11.3ms
+2024-08-08T20:20:55.224+08:00	[34;1m info [0;22m	127.0.0.1:52760 - /member.Member/findMemberById - {"memberId":12}	duration=5.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=686a699818dd20b9c69375021d318406	span=b205315d837801ca
+2024-08-08T20:20:55.271+08:00	[34;1m info [0;22m	127.0.0.1:52759 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	trace=686a699818dd20b9c69375021d318406	span=535ae186b6d7b2f1	duration=23.7ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:20:55.274+08:00	[34;1m info [0;22m	127.0.0.1:52759 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=686a699818dd20b9c69375021d318406	span=3d94d3e875e354ee	duration=2.1ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:20:56.427+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	trace=9a19c6507fec8d44af59d7432017e010	span=95834d55d109fdc4	duration=37.8ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:20:56.451+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=389f96e152b72766a0e30fff1c647f58	span=b409e3a6836adbf7	duration=29.6ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:20:56.463+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=40.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=0972f2f3448cae01c3bdbf75df62c82d	span=c244fa695fe8d021
+2024-08-08T20:20:56.473+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=941e1f6fec9d201717a842720f787725	span=4d1da9eebbcd6758	duration=50.5ms
+2024-08-08T20:21:03.353+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":573012.44,"orderId":"E3995121723119655277","status":4,"symbol":"BTC/USDT","userId":12}	caller=consumer/consumer.go:54
+2024-08-08T20:21:03.731+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=7e37c716ffe099117e2f28b2e36c6d97	span=91a825a751f73844	duration=18.9ms
+2024-08-08T20:21:03.737+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=34.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=84d37f1645efa3fcc9e68b15169750a1	span=5532acb1c6cb60f0
+2024-08-08T20:21:04.079+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=22.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=b5878a19bb791624dc6bc53cf7654714	span=6a7777659d7c7a80
+2024-08-08T20:21:04.103+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=8bf829f89107aa82	duration=41.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=e4b4607519f2b6cd1bdde119ed14fed4
+2024-08-08T20:22:13.576+08:00	[34;1m info [0;22m	127.0.0.1:52760 - /member.Member/findMemberById - {"memberId":12}	duration=4.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=752bc526caebe50cbd844414064c7fa1	span=a97b72014c478ecb
+2024-08-08T20:22:13.596+08:00	[34;1m info [0;22m	127.0.0.1:52759 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=8.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=752bc526caebe50cbd844414064c7fa1	span=4d5bdd3b24b7c048
+2024-08-08T20:22:13.625+08:00	[34;1m info [0;22m	127.0.0.1:52759 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=23.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=752bc526caebe50cbd844414064c7fa1	span=e87cf5df1f2604c3
+2024-08-08T20:22:14.757+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=238f955a21c148d7f821a1771ba4abec	span=0a85b0ff80583859	duration=31.1ms
+2024-08-08T20:22:14.776+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=33.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=60c09609222033c81802e11f7bfdefdb	span=1709655d6ed9f2fa
+2024-08-08T20:22:14.779+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=33.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=c286d448d7aca3cf8aec7bf83f9aee20	span=80efb90032cd2702
+2024-08-08T20:22:14.783+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=56.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=5c4468b2a5305c75d2159c9b2f4b6c66	span=5c7d6a64632aecfa
+2024-08-08T20:22:18.169+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":1,"money":10.01,"orderId":"E3006201723119733626","status":4,"symbol":"BTC/USDT","userId":12}	caller=consumer/consumer.go:54
+2024-08-08T20:22:23.988+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=30.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=32b48b139c8c4d114bc86cc25d06cca8	span=f369e4084c8bc701
+2024-08-08T20:22:23.991+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=6.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=173ab11f37d300d654ea0d263b369a6d	span=b285c5a2c4d4c599
+2024-08-08T20:23:07.118+08:00	[34;1m info [0;22m	127.0.0.1:52760 - /member.Member/findMemberById - {"memberId":12}	duration=21.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=f7649b5cf2a6202263ba2427e80af6f6	span=06b7e6c35610c36f
+2024-08-08T20:23:07.190+08:00	[34;1m info [0;22m	127.0.0.1:52759 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=f7649b5cf2a6202263ba2427e80af6f6	span=fb0335c4a058788d	duration=14.5ms
+2024-08-08T20:23:07.203+08:00	[34;1m info [0;22m	127.0.0.1:52759 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=9.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=f7649b5cf2a6202263ba2427e80af6f6	span=b3197554533b0d85
+2024-08-08T20:23:08.311+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	trace=5d0ba63221c6b7d363aae3fb0c1076f1	span=ddc4c14892195b86	duration=28.3ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:23:08.322+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=32.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=90e60da86a248c52e445eb097054e670	span=4b7b870363d060d8
+2024-08-08T20:23:08.340+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	trace=d01a4cdc24bf8a45fb76787dabc143b1	span=1e00efb8a0e3d222	duration=36.0ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:23:08.343+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=35.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=57ba0d469a82624496ca337ebfc094eb	span=72e91f0dc0a88910
+2024-08-08T20:23:16.369+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":1,"money":10.01,"orderId":"E7521861723119787208","status":4,"symbol":"BTC/USDT","userId":12}	caller=consumer/consumer.go:54
+2024-08-08T20:25:23.344+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=6.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=66c8239d31556636df38cd167069105b	span=6da00d21387dda0e
+2024-08-08T20:25:23.361+08:00	[34;1m info [0;22m	127.0.0.1:52546 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	span=a517bbab78f8784c	duration=4.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=24b32c5b6b9741f6dfab885ad5632a22
+2024-08-08T20:34:44.622+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	span=2914dd2c1f3bf61c	duration=36.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=e399ee4945ab9856872b79963ffa82e2
+2024-08-08T20:34:44.689+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=54.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=e2decbabcfadbb98a626129d450548fc	span=81218e65c768467e
+2024-08-08T20:36:47.080+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=320.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=5fd2f400a9682fb4b65d8ab4824d3523	span=cca45eca3d8dcf2a
+2024-08-08T20:36:47.164+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"ETH","userId":11}	duration=404.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=8e658e3c01103bdd9c28dc0f9bbeb99e	span=ce42de067c637d2f
+2024-08-08T20:36:50.043+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=59.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=6df67ec9e64bb8977d5a7d709604e923	span=794b3bddd50c926f
+2024-08-08T20:36:50.069+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=d2e483def17ed17bad6f952281f6a092	span=e804849b85c2c6cd	duration=87.4ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:36:58.068+08:00	[34;1m info [0;22m	127.0.0.1:54894 - /member.Member/findMemberById - {"memberId":11}	span=b5527cf948a8b015	duration=29.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=e9aeae8b5f3c652c9ecc98b13687a008
+2024-08-08T20:36:58.192+08:00	[34;1m info [0;22m	127.0.0.1:54895 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=45.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=e9aeae8b5f3c652c9ecc98b13687a008	span=dde7bebad737d05b
+2024-08-08T20:36:58.370+08:00	[34;1m info [0;22m	127.0.0.1:54895 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=e9aeae8b5f3c652c9ecc98b13687a008	span=46e56b689b295f51	duration=64.9ms
+2024-08-08T20:36:59.532+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=a262192eee1bdf5fa8831a31641414c8	span=c848a4ac472ccec5	duration=36.7ms
+2024-08-08T20:36:59.556+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=b0356288132fdf6a	duration=55.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=81b0e2223a2b28c5b237f83f67d947dc
+2024-08-08T20:36:59.575+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=956e27b2f274c884758537c1b04d4971	span=d1ab31e741b13bbf	duration=41.3ms
+2024-08-08T20:36:59.585+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=79.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=5a043018fc732b3f9931006bc45bdfab	span=cf5fe8b240d59b43
+2024-08-08T20:37:00.598+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":58288.23,"orderId":"E8887571723120618399","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:54
+2024-08-08T20:37:19.845+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=d51d86262e4f55470e9bf04822053806	span=5b70b2b9c64176d7	duration=80.9ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:37:19.867+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=102.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=0dd62a53a018cb7232e07f654b429968	span=bf782717c64d72a3
+2024-08-08T20:37:20.247+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=4a1e73bae70368e52224a1bba09b799a	span=7d70604ac014ab4f	duration=250.8ms
+2024-08-08T20:37:20.283+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=159.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=8d04626090d7ed5584d132ca5a9e8834	span=177583a01ea3dea9
+2024-08-08T20:38:12.250+08:00	[34;1m info [0;22m	127.0.0.1:54894 - /member.Member/findMemberById - {"memberId":12}	trace=dd68bb28ef955391e1d576a3c994a4e6	span=187e626d53f9a31c	duration=10.4ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:38:12.441+08:00	[34;1m info [0;22m	127.0.0.1:54895 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	span=92c1315ea4f86690	duration=68.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=dd68bb28ef955391e1d576a3c994a4e6
+2024-08-08T20:38:12.514+08:00	[34;1m info [0;22m	127.0.0.1:54895 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=54.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=dd68bb28ef955391e1d576a3c994a4e6	span=874da2a93c890aa3
+2024-08-08T20:38:13.646+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=32.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=242900e63be532fbff09e1d1071ae6ba	span=7c3f5f652785e29d
+2024-08-08T20:38:13.649+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=42.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=88fe7135f9a470123ec49095963260f7	span=15e73fb3ead368a1
+2024-08-08T20:38:13.658+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=40.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=cec204d8707856254c90364cd221ffc5	span=fa189bcff53e0a60
+2024-08-08T20:38:13.660+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=49.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=ff1ad360e3808fb608dd5699ea409921	span=993a6d41bd9ae78a
+2024-08-08T20:38:15.495+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":9.009,"orderId":"E3576201723120692527","status":4,"symbol":"BTC/USDT","userId":12}	caller=consumer/consumer.go:54
+2024-08-08T20:38:35.657+08:00	[34;1m info [0;22m	127.0.0.1:54894 - /member.Member/findMemberById - {"memberId":12}	duration=7.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=7664923ca445abc20247ed4116e403ae	span=b356d84f64dfd425
+2024-08-08T20:38:35.688+08:00	[34;1m info [0;22m	127.0.0.1:54895 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=24.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=7664923ca445abc20247ed4116e403ae	span=bc3e66d2a302dfa2
+2024-08-08T20:38:35.705+08:00	[34;1m info [0;22m	127.0.0.1:54895 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=12.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=7664923ca445abc20247ed4116e403ae	span=b0bf8bf280b57725
+2024-08-08T20:38:36.937+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	span=648375b822a762e2	duration=104.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=d8b2c3f2c168236c4c4540590c096631
+2024-08-08T20:38:36.944+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=69.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=ee24b8923c34c5112ded3c9e63ebdcd0	span=56afd2b4faf1285e
+2024-08-08T20:38:36.993+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=20.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=301f6e44e5bbb6d01a2f46c986a502fa	span=80813506e1b36678
+2024-08-08T20:38:37.006+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=13.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=2e131b5c7e9ca5cbb2e91b74b9dccd63	span=1a68b048342d2bfc
+2024-08-08T20:38:40.422+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":400400,"orderId":"E3619021723120715709","status":4,"symbol":"BTC/USDT","userId":12}	caller=consumer/consumer.go:54
+2024-08-08T20:39:32.411+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=49.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=19f7d4484d228ecb3449a4e3c096c829	span=0a3ca5a5983d8fbf
+2024-08-08T20:39:32.485+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=110.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=6487cb1261521417ab652df0661faf59	span=5ada76c21df9b03a
+2024-08-08T20:42:28.333+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=f23bf760b000a76572dd3a836644b1c8	span=3404f8c5a9484bd1	duration=56.1ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-08T20:42:28.377+08:00	[34;1m info [0;22m	127.0.0.1:54607 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=113.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=be7d55c19c5cd8c032bc49599d1a6453	span=3e9d75b7becf9016
+2024-08-09T15:37:30.093+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=8e6f71bd65ebd85a916f7a61e7345f53	span=ea8377de4ed73403	duration=266.9ms
+2024-08-09T15:37:30.095+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=272.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=9834e06f3aedb48e5e1213c974ba7dd0	span=1a0d0f48120ecff9
+2024-08-09T15:38:03.454+08:00	[34;1m info [0;22m	127.0.0.1:51510 - /member.Member/findMemberById - {"memberId":11}	duration=19.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=85f6574b9ce84a271349767586d9b3ce	span=6fade466394ca657
+2024-08-09T15:38:03.473+08:00	[34;1m info [0;22m	127.0.0.1:51511 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=5.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=85f6574b9ce84a271349767586d9b3ce	span=e584e0f15f5d2112
+2024-08-09T15:38:03.480+08:00	[34;1m info [0;22m	127.0.0.1:51511 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=85f6574b9ce84a271349767586d9b3ce	span=c2538adb1c501094	duration=5.0ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T15:38:04.572+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=25.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=a09ea00bc36b865e36fb6cf8c77568d3	span=18df89d6f0577110
+2024-08-09T15:38:04.589+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=b7a9145397853e8ec11dd552252f3bc3	span=a7d55aaf1b5279c8	duration=42.4ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T15:38:04.602+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=40d58124c46301992d5e4c4c551052c4	span=faf9f9454184eada	duration=56.7ms
+2024-08-09T15:38:04.611+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=64.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=da01655a5cb3fcc57867a1b3aad3e1cb	span=90c3034a58895388
+2024-08-09T15:38:06.227+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":1,"money":10.01,"orderId":"E4416651723189083483","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:56
+2024-08-09T15:40:47.204+08:00	[34;1m info [0;22m	CaptchaDomain Verify no success
+	caller=domain/captcha.go:54
+2024-08-09T15:40:47.226+08:00	[34;1m info [0;22m	127.0.0.1:51549 - /login.Login/login - {"username":"13322751158","password":"123456","captcha":{"server":"https://0.vaptcha.com/verify","token":"1723189241nN5b3qe5159"},"ip":"192.168.40.1"}	duration=361.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=a9e1d6a5fe6f3c73d9b85fe3fe011c3b	span=57da933642e045ad
+2024-08-09T15:40:51.919+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	span=65b7f7b5f71b4d6f	duration=9.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=894c95f764ac5396de9988f96c0b147b
+2024-08-09T15:40:51.923+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	span=25eda86b91131e87	duration=10.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=ee6292b32f9a39fc880c604b638270cf
+2024-08-09T15:40:52.161+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=d0bb5f6d542e1b78ea6c546f25e3a283	span=9134c39c539c3fd5	duration=8.4ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T15:40:52.171+08:00	[34;1m info [0;22m	127.0.0.1:51550 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	trace=d2acf4c3fbe0fb8964407b474eb49d8d	span=b1ad4e7d1e8ef533	duration=21.2ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T15:48:03.467+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=18.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=96ac630e246632289d40257298f10559	span=e12dcd23abbfc1b7
+2024-08-09T15:48:03.480+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=29.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=ebbc6a64614f4ffd7ea74da2d004989e	span=2087ff0bd03444a7
+2024-08-09T15:49:51.970+08:00	[34;1m info [0;22m	127.0.0.1:53775 - /member.Member/findMemberById - {"memberId":12}	trace=fe147c6b2218bf7f919a6a1d75172f11	span=72173f0dbac673af	duration=10.5ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T15:50:16.145+08:00	[34;1m info [0;22m	127.0.0.1:53775 - /member.Member/findMemberById - {"memberId":12}	duration=2.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=78fe6e2aadf6260f45a98fd84a51da99	span=b71e847b684cc61b
+2024-08-09T15:50:16.178+08:00	[34;1m info [0;22m	127.0.0.1:53782 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=6.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=78fe6e2aadf6260f45a98fd84a51da99	span=565fc991f56b7748
+2024-08-09T15:50:16.201+08:00	[34;1m info [0;22m	127.0.0.1:53782 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=12.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=78fe6e2aadf6260f45a98fd84a51da99	span=af5906f8904455fd
+2024-08-09T15:50:17.292+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=13.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=d17fe6572c01a08ce1e2fe0f32b97eef	span=5fd994a75ecc225a
+2024-08-09T15:50:17.306+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=e22d162402e80754380027d7435b7a8e	span=f5ac8b7d9e91fcae	duration=30.9ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T15:50:17.315+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=42.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=777b45d82cc5f966475cd61727560e12	span=770139ba51ecf470
+2024-08-09T15:50:17.331+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=56.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=84a486687576d0fb0fbbf215236bc87c	span=8ee4db0731644f9b
+2024-08-09T15:51:17.839+08:00	[34;1m info [0;22m	127.0.0.1:53775 - /member.Member/findMemberById - {"memberId":11}	duration=8.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=a2faaab8a68d9c05a91a78ea88bd9d22	span=d599cbc42207073a
+2024-08-09T15:51:17.861+08:00	[34;1m info [0;22m	127.0.0.1:53782 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=a2faaab8a68d9c05a91a78ea88bd9d22	span=9b4cf0ff794cdcdb	duration=4.3ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T15:51:17.867+08:00	[34;1m info [0;22m	127.0.0.1:53782 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=5.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=a2faaab8a68d9c05a91a78ea88bd9d22	span=aea239eb23cddfe1
+2024-08-09T15:51:18.957+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=3359a010f6b10b5b8edf29d33139166e	span=3010ea9dd7806504	duration=27.8ms
+2024-08-09T15:51:18.976+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=44.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=0070761c3c4d9fb3ecce4d205b742c64	span=c8c27b267c31de07
+2024-08-09T15:51:18.990+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=3a6eb3965ba7dfa965c6292af8d258d3	span=49cb47d33f5dfe40	duration=58.7ms
+2024-08-09T15:51:18.995+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=69.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=2a03258fc38c1916ec20cb3e75b7b6fc	span=48583376dcc58a1e
+2024-08-09T15:51:27.794+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":600600,"orderId":"E9597981723189877870","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:56
+2024-08-09T15:51:31.566+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=37.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=cbbc25417aea6c850b6d0c4a91fc1642	span=85f4cc9171dbf718
+2024-08-09T15:51:31.575+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=20e45e58229078aac7420a2b8d09ed9f	span=9013e911f175fd4b	duration=45.0ms
+2024-08-09T15:51:46.318+08:00	[34;1m info [0;22m	127.0.0.1:53775 - /member.Member/findMemberById - {"memberId":11}	duration=2.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=4b828503ce9c85c8e77d4e45a73a14cf	span=fdff44a1cd270c86
+2024-08-09T15:51:46.343+08:00	[34;1m info [0;22m	127.0.0.1:53782 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	span=576edb803594961b	duration=13.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=4b828503ce9c85c8e77d4e45a73a14cf
+2024-08-09T15:51:46.355+08:00	[34;1m info [0;22m	127.0.0.1:53782 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=10.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=4b828503ce9c85c8e77d4e45a73a14cf	span=157b31fcc28220a0
+2024-08-09T15:51:47.456+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=22.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=74ceb9546212fed3ec202752803b5242	span=132f017f49df5b4d
+2024-08-09T15:51:47.467+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=32.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=c47cdb3423ba24d9bff229b89689d8ee	span=28b5316be40db705
+2024-08-09T15:51:47.474+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=39.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=e59f2c5515fc4938d97b818f154f7613	span=1f9da50a7bd95e53
+2024-08-09T15:51:47.496+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=42.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=e90c6cd87088988e14fdf6b8f11daa99	span=988576800d2a9978
+2024-08-09T15:51:54.046+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=17.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=a469eae79ca4f7730274cdd9bc535276	span=d8ced7417c1b6e76
+2024-08-09T15:51:54.062+08:00	[34;1m info [0;22m	127.0.0.1:53391 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=15.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=abf605b746b408591fd1ecb84cbfec5a	span=9c51d3102547d2bc
+2024-08-09T16:16:33.379+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=28.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=cdc03b6922ede28e2a2b84b02eb780d7	span=2e497a756f4de3d7
+2024-08-09T16:16:33.379+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=28.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=bbb6267ed83e68a42ca5e9c82347dd45	span=4084d270bdce9601
+2024-08-09T16:17:24.876+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=d9c932abcddbd450d2f854ba79424a36	span=3036ff74cc5d74ba	duration=11.8ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T16:17:24.879+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=b9caba775bd83359a9b192fa6326c3e2	span=6037b118c17836d7	duration=15.0ms
+2024-08-09T16:18:19.798+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=27.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=469a6756f9850d9dbba9c1a3149b4221	span=50f935741c786f5d
+2024-08-09T16:18:19.802+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=d1e686b791b9c5e3	duration=15.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=415ac3e2c3220b14f4b1e6253324635b
+2024-08-09T16:19:42.384+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=27.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=61520371113ff5cccd9cf3248c094e3f	span=c50bc35a80785d98
+2024-08-09T16:19:42.389+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=9.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=3a8924ca64e4cf24092411eaee29a708	span=012a697844c3bee4
+2024-08-09T16:20:09.868+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=9.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=8478edb063af1e28a6288f10cd371ccb	span=72b8706953af8400
+2024-08-09T16:20:09.885+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=774cc151b6960bdeaf61bf9c88b856e7	span=2c3cf22fd105e1f5	duration=15.8ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T16:20:31.897+08:00	[34;1m info [0;22m	127.0.0.1:60851 - /member.Member/findMemberById - {"memberId":11}	duration=39.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=97b66d267e5b8bf546a50d3b40f5f5b3	span=5da86fde960be813
+2024-08-09T16:20:31.911+08:00	[34;1m info [0;22m	127.0.0.1:60852 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=3.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=97b66d267e5b8bf546a50d3b40f5f5b3	span=caf20beb8bd5942e
+2024-08-09T16:20:31.917+08:00	[34;1m info [0;22m	127.0.0.1:60852 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=4.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=97b66d267e5b8bf546a50d3b40f5f5b3	span=2459e89305db18eb
+2024-08-09T16:20:33.000+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=8.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=757eb5353d7b4f32cfd46398b538ef8a	span=934c06de83045582
+2024-08-09T16:20:33.010+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=18.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=dacf3c9f4af25a391d7b1a92fd6c81fd	span=f1ad3dd27eeb87f8
+2024-08-09T16:20:33.026+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	span=ed190bfad9846388	duration=34.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=edb065afaae621fbc5e1a71018f74a7e
+2024-08-09T16:20:33.053+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=61.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=3ea1c6ad86d68977f5253fea780a497f	span=652d78667ff9da33
+2024-08-09T16:20:37.794+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":1,"money":10.01,"orderId":"E3508541723191631920","status":4,"symbol":"BTC/USDT","userId":11}	caller=consumer/consumer.go:56
+2024-08-09T16:22:32.892+08:00	[34;1m info [0;22m	127.0.0.1:60851 - /member.Member/findMemberById - {"memberId":12}	duration=12.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=685ab00b65a3054befc7f6a28cfe44e6	span=cfa04d38c8068d68
+2024-08-09T16:22:32.961+08:00	[34;1m info [0;22m	127.0.0.1:60852 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=36.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=685ab00b65a3054befc7f6a28cfe44e6	span=7001515c4464a5da
+2024-08-09T16:22:33.004+08:00	[34;1m info [0;22m	127.0.0.1:60852 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=685ab00b65a3054befc7f6a28cfe44e6	span=4eda660a09e24487	duration=35.8ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T16:22:34.114+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=15.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=ad84d8bfd4a6fa0c2b43718fc42aee3f	span=4622615d11324e4c
+2024-08-09T16:22:34.127+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	span=4cab56aa5b58be41	duration=28.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=805ebb22abade77fc50e768c1dfbef37
+2024-08-09T16:22:34.133+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	span=060264b3651bccc3	duration=31.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=88f7273db006d2974525827508810f65
+2024-08-09T16:22:34.149+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=94317423bc620262f16622a090a4f0c1	span=29b0ef806de4565f	duration=45.1ms
+2024-08-09T16:23:38.669+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=89.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=866633988f7979adb02bb57cc9bb128d	span=ac25d56c8b9dd415
+2024-08-09T16:23:38.696+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=116.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=247412bc67f28269790109b8ab8e4fbc	span=97da532f0473e70c
+2024-08-09T16:23:56.729+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=13.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=688891f4afc3ecd6996e7eaa7b6cc483	span=26c95175ee34995f
+2024-08-09T16:23:56.732+08:00	[34;1m info [0;22m	127.0.0.1:59999 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=16.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=f3a0c709f6afadec009a31f2599f26dc	span=be551dc469fef2a3
+2024-08-09T20:32:48.398+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=03ac32a6b54e76147dca23ef9e9182a5	span=95879f101f5553ef	duration=175.0ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T20:32:48.398+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=e35747b673838e0aacd95d80315a05b7	span=eb643f38cc8a3d02	duration=175.0ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T20:33:01.442+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=22.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=de93e9704c903e5493f2398b893f66fb	span=3da62a1f7f4654b1
+2024-08-09T20:33:01.448+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=a1f32bbc1545f197c81d1a4584500e3c	span=f4d4459fe267606c	duration=27.4ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T20:33:01.588+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=33.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=a1ecbc4f7b00c2af1401046a7460a557	span=e4334b1e299c72f2
+2024-08-09T20:33:01.593+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=6b0c9cbda0b80977e43484d19ad5da3b	span=fc3c51941a5aa8d4	duration=39.2ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T20:33:19.844+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=17.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=eb41e3c9e74a4b35e833ee8af500698e	span=eba1f9dd71714f41
+2024-08-09T20:33:19.846+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=14.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=b4ee98cf5852a2c886c04bd3ce5de1eb	span=d730eebb99b3fa40
+2024-08-09T20:33:19.953+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=30ab1cff6c6b7a9028da914cab04971a	span=7e9d6abed9b51254	duration=28.1ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T20:33:19.973+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=936d64fd38d1efdfad5610d7650af470	span=af57e70f7613e6a0	duration=48.0ms
+2024-08-09T20:34:32.696+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=12.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=c085a5564c37b531b9ddf9b5c74aacb8	span=8f605d900a252060
+2024-08-09T20:34:32.703+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"ETH","userId":11}	duration=19.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=25f31d47d6a44e94f9d015e179a44af9	span=ce233d21426f5990
+2024-08-09T20:34:38.469+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"ETH","userId":11}	duration=13.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=8fdcd8ff363548edddd323b2f08be7d7	span=004702c81cd78cab
+2024-08-09T20:34:38.489+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=27.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=b8179e9749f60ed30ea1c92334ee78de	span=f07b159cdfef8e36
+2024-08-09T20:34:44.141+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	trace=75794c6526fe47ec689670efde563ba9	span=824afdb3ad4a77ca	duration=33.5ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T20:34:44.142+08:00	[34;1m info [0;22m	127.0.0.1:64152 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	caller=serverinterceptors/statinterceptor.go:90	trace=847784329957f4f8d5a5630f4022e411	span=dd4e1783a05bfe0f	duration=34.5ms
+2024-08-09T20:51:44.969+08:00	[34;1m info [0;22m	127.0.0.1:51100 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=19.9ms	caller=serverinterceptors/statinterceptor.go:90	trace=f541995579453ba40a74eb2c52374b0a	span=aac76db7c62f8e1f
+2024-08-09T20:51:44.971+08:00	[34;1m info [0;22m	127.0.0.1:51100 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=20.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=65d0ac73ffb41d84200800b228b27bc1	span=668e92232c6379bc
+2024-08-09T21:00:29.768+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=6954e8a89f29228c160c64a1594eaeb8	span=467694e6faf22eb8	duration=36.4ms
+2024-08-09T21:00:29.865+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=44.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=81d095516b704bd107a370d514cf4d4b	span=4c3702f8fe37f1e7
+2024-08-09T21:00:41.616+08:00	[34;1m info [0;22m	127.0.0.1:52632 - /member.Member/findMemberById - {"memberId":12}	span=f4bdb09931fe9986	duration=52.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=8fe3d1df8d9d760304425b009d97d0f7
+2024-08-09T21:00:41.642+08:00	[34;1m info [0;22m	127.0.0.1:52631 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=8fe3d1df8d9d760304425b009d97d0f7	span=9038ef4dbdfb2baa	duration=4.9ms
+2024-08-09T21:00:41.653+08:00	[34;1m info [0;22m	127.0.0.1:52631 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=8.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=8fe3d1df8d9d760304425b009d97d0f7	span=2d7413754b01737c
+2024-08-09T21:00:42.733+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=a6488a9986de146edf3e4754c74ffc36	span=fd4587a74eecd7b8	duration=15.6ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T21:00:42.743+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=ae940bbb104c953a578c11bb5649e31b	span=0583c50df009e84e	duration=25.9ms
+2024-08-09T21:00:42.745+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=15.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=631030fc57caca8fa58c5bd673c630d3	span=1337feb9dcb41213
+2024-08-09T21:00:42.752+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=34.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=6fcdaf05848894f3ab87b1d78a6ccd1f	span=271e398f46b4b534
+2024-08-09T21:00:42.808+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":5538933.4,"orderId":"E9130141723208441654","status":4,"symbol":"BTC/USDT","userId":12}	caller=consumer/consumer.go:56
+2024-08-09T21:00:56.110+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=17.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=77e31e82fe6fa5fec0dd0b18de4487eb	span=b7a4e7367f35d879
+2024-08-09T21:00:56.124+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=36.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=d177f5f9e50f39dcf8df8307f4c009b4	span=aa90901a3a333bc7
+2024-08-09T21:01:04.937+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=22.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=bb3906fe1713569dde6f3a3dcdf04a67	span=f1e24741d133a62c
+2024-08-09T21:01:04.939+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	span=2fd50466f929e3d8	duration=17.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=4d1ca96719506c98c238f62061e9198c
+2024-08-09T21:05:45.213+08:00	[34;1m info [0;22m	127.0.0.1:53365 - /member.Member/findMemberById - {"memberId":12}	duration=18.1ms	caller=serverinterceptors/statinterceptor.go:90	trace=c57347ec3d543525d7d3eaed4ba47b78	span=df75cb86eef8a79c
+2024-08-09T21:05:45.237+08:00	[34;1m info [0;22m	127.0.0.1:53366 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=5.8ms	caller=serverinterceptors/statinterceptor.go:90	trace=c57347ec3d543525d7d3eaed4ba47b78	span=55ba38044c6ae206
+2024-08-09T21:05:45.243+08:00	[34;1m info [0;22m	127.0.0.1:53366 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=3.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=c57347ec3d543525d7d3eaed4ba47b78	span=c2c57ce91b1a43df
+2024-08-09T21:05:46.338+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=b038f0d5c4fc8ad04fbeee5bd7d467ba	span=e12beca2b403d64c	duration=24.8ms
+2024-08-09T21:05:46.345+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=2eec34e51e41afb00f451b03eb9111a6	span=8c4d4b54dd0836a8	duration=24.2ms
+2024-08-09T21:05:46.359+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=1a4c1ce0a998e6e1d94e3e06b99376e9	span=b741d29c637d6f21	duration=40.8ms
+2024-08-09T21:05:46.375+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=7978fd55992d6732dafb7bc715cf5370	span=1b8b991372a73580	duration=55.0ms
+2024-08-09T21:06:09.620+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	span=f06f78dbcc6660cf	duration=12.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=619aa4f1430afa7a51d9cd7da36429c0
+2024-08-09T21:06:09.638+08:00	[34;1m info [0;22m	127.0.0.1:52204 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=4b972387e993913ee2e4c21299c5e984	span=2d9c6e096e55c22c	duration=16.4ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T21:18:09.835+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.838+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.841+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.844+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.847+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.851+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.855+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.858+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.862+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.865+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.870+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.872+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.876+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.878+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.883+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.886+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.890+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.895+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.898+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.901+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.905+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.908+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.911+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.915+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.918+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.920+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.922+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.926+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.930+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.935+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.940+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:09.944+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.847+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.865+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.899+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.913+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.926+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.941+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.955+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.961+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:18.973+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.853+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.856+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.860+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.863+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.868+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.871+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.874+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.876+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:27.881+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.859+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.862+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.868+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.872+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.876+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.878+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.884+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.889+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:36.892+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.863+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.866+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.869+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.871+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.874+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.876+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.878+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.881+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:45.884+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.871+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.875+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.878+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.881+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.884+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.889+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.892+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.895+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:18:54.897+08:00	[34;1m info [0;22m	开始更新订单信息:	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.947+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.950+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.954+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.956+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.960+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.963+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.966+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.969+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.972+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.974+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.977+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.979+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.983+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.987+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.991+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.993+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.997+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:24.999+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.002+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.004+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.007+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.009+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.012+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.017+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.019+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.023+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.025+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.030+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:25.034+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.951+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.953+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.957+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.960+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.963+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.967+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.971+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.973+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:33.976+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.960+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.963+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.969+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.973+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.977+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.980+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.986+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.989+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:42.994+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.963+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.966+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.971+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.975+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.980+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.985+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.987+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.990+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:19:51.994+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:00.971+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:00.975+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:00.979+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:00.982+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:00.986+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:00.989+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:00.993+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:00.998+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:01.001+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:09.975+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:09.980+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:09.982+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:09.985+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:09.988+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:09.992+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:09.994+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:09.997+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:10.001+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:18.983+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:18.986+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:18.990+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:18.994+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:18.997+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:19.000+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:19.003+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:19.006+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:20:19.009+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.056+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.075+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.080+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.084+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.088+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.093+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.097+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.101+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.104+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.109+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.113+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.121+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.127+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.130+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.135+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.140+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.150+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.154+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.159+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.161+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.166+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.170+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.175+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.180+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.184+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.188+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.193+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.196+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.199+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.204+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.208+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.212+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.230+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.234+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.238+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.247+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.249+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.251+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.257+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.260+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.262+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.265+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.268+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.273+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.277+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.281+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.284+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.288+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.292+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.294+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.298+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.300+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.303+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.307+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.310+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.312+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.316+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.318+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.322+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.325+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.329+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.333+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.336+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.339+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.342+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.345+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.350+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.356+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.359+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.363+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.366+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.368+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.371+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.375+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.378+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.382+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.384+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.386+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.391+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.393+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.396+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.398+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:45.402+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.058+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.063+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.066+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.069+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.075+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.078+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.081+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.086+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:21:54.089+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.060+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.063+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.066+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.068+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.072+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.077+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.079+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.083+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:03.087+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.066+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.069+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.072+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.075+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.079+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.080+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.083+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.087+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:12.090+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.070+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.071+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.077+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.080+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.083+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.085+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.090+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.093+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:21.096+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.110+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.194+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.211+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.215+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.241+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.244+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.277+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.314+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:30.325+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.114+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.117+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.121+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.124+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.127+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.129+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.131+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.135+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:39.137+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.116+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.120+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.123+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.125+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.128+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.131+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.134+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.138+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:48.140+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.121+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.124+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.127+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.131+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.134+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.137+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.141+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.144+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:22:57.147+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:06.128+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:06.132+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:06.137+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:06.141+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:06.145+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:06.151+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:06.156+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:06.160+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.137+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.141+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.146+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.150+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.155+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.159+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.163+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.166+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:15.170+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.145+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.148+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.152+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.157+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.160+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.165+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.171+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.176+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:24.179+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.144+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.147+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.150+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.153+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.155+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.159+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.161+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.164+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:23:33.166+08:00	[34;1m info [0;22m	开始更新订单信息:{0  0  0  0 0 0 0 0  0 0 0 0 }	caller=consumer/consumer.go:217
+2024-08-09T21:27:14.077+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	duration=56.5ms	caller=serverinterceptors/statinterceptor.go:90	trace=b1aa599c57bdabb34e0184a4095071a0	span=31c3c4c4cbdea9c3
+2024-08-09T21:27:14.079+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	duration=55.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=71c2ddf81bab421cd145976d62741b63	span=4eefd49d09cd82ca
+2024-08-09T21:27:52.238+08:00	[34;1m info [0;22m	127.0.0.1:57179 - /member.Member/findMemberById - {"memberId":12}	span=6b9984befd09e97e	duration=18.4ms	caller=serverinterceptors/statinterceptor.go:90	trace=464787d3251a96b6c61f0d9108ebd372
+2024-08-09T21:27:52.279+08:00	[34;1m info [0;22m	127.0.0.1:57180 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=7.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=464787d3251a96b6c61f0d9108ebd372	span=171b1e3913ae7675
+2024-08-09T21:27:52.286+08:00	[34;1m info [0;22m	127.0.0.1:57180 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	trace=464787d3251a96b6c61f0d9108ebd372	span=dc6eadbb4fdb1ec4	duration=4.8ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T21:27:53.402+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=17.0ms	caller=serverinterceptors/statinterceptor.go:90	trace=a8a57e327951da31a952404c3dfa683a	span=1fea12b44679f0d7
+2024-08-09T21:27:53.406+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=0d024f8faa64d4fefd8806c144797311	span=0628ec658474cd76	duration=21.9ms
+2024-08-09T21:27:53.416+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	caller=serverinterceptors/statinterceptor.go:90	trace=fe3ea44cfedf869366077119f709e96f	span=9f21d907330ecaca	duration=24.4ms
+2024-08-09T21:27:53.438+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=36.7ms	caller=serverinterceptors/statinterceptor.go:90	trace=c70b38a9b9ad6bcd821448a5c5f801f3	span=7071cc802f5042fa
+2024-08-09T21:27:54.438+08:00	[34;1m info [0;22m	读取到订单添加消息：{"baseSymbol":"USDT","coinSymbol":"BTC","direction":0,"money":608347.74,"orderId":"E3399261723210072288","status":4,"symbol":"BTC/USDT","userId":12}	caller=consumer/consumer.go:56
+2024-08-09T21:29:00.679+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":12}	duration=33.2ms	caller=serverinterceptors/statinterceptor.go:90	trace=d4761b995d4e633c3be110e972153395	span=87d77871d3ccc659
+2024-08-09T21:29:00.690+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":12}	duration=43.3ms	caller=serverinterceptors/statinterceptor.go:90	trace=edf33c98ca6e69e2480beff92063867d	span=26c7cf35f5e257bc
+2024-08-09T21:30:21.925+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"USDT","userId":11}	trace=b2fb1bbf8bde2c1f560bc88830438878	span=bef16a1aaf772cff	duration=35.7ms	caller=serverinterceptors/statinterceptor.go:90
+2024-08-09T21:30:21.942+08:00	[34;1m info [0;22m	127.0.0.1:56801 - /order.Asset/findWalletBySymbol - {"coinName":"BTC","userId":11}	span=cfb4bd81d6c63ac4	duration=53.6ms	caller=serverinterceptors/statinterceptor.go:90	trace=b31bb6750b1b1ac8e25df21316a07aa9
